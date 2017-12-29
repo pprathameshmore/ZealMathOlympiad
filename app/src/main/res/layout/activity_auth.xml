@@ -59,10 +59,10 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/text_box_size"
                         android:layout_marginTop="@dimen/space_between_two_comp"
-                        android:text="@string/send_btn" />
+                        android:text="@string/confirm" />
 
 
-                    <EditText
+              <!--      <EditText
                         android:id="@+id/getOTP"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
                         android:layout_margin="@dimen/text_box_size"
                         android:layout_marginTop="@dimen/space_between_two_comp"
                         android:inputType="numberDecimal"
-                        android:text="@string/confirm" />
+                        android:text="@string/confirm" /> -->
 
 
                 </LinearLayout>

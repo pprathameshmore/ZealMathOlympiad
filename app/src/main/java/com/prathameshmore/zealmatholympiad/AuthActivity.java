@@ -1,5 +1,6 @@
 package com.prathameshmore.zealmatholympiad;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -33,6 +34,7 @@ public class AuthActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String mVerificationId;
     private PhoneAuthProvider.ForceResendingToken mResendToken;
+    private ProgressDialog mProgressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +102,7 @@ public class AuthActivity extends AppCompatActivity {
         };
 
     }
+
 
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {

@@ -12,7 +12,7 @@
     <item
         android:id="@+id/tests_menu"
         android:icon="@mipmap/ic_content_paste_black_24dp"
-        android:title="@string/tests">
+        android:title="@string/study_menu">
 
 
     </item>
@@ -48,6 +48,16 @@
         android:icon="@mipmap/ic_feedback_black_24dp"
         android:title="@string/about">
 
+
+    </item>
+
+    <item
+
+        android:id="@+id/log_out_menu"
+        android:icon="@mipmap/ic_cancel_black_24dp"
+        android:title="@string/log_out_menu"
+
+        >
 
     </item>
 

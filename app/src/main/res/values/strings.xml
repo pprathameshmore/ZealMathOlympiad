@@ -29,11 +29,13 @@
     <!-- Menus -->
     <string name="home">Home</string>
     <string name="about">About</string>
-    <string name="tests">Tests</string>
+    <string name="study_menu">Study Material</string>
     <string name="videos">Videos</string>
-    <string name="zeal_clg">Zeal College of Engineering</string>
+    <string name="zeal_clg">About ZCOER</string>
     <string name="share">Share app</string>
-    <string name="messages">News</string>
+    <string name="messages">"News &amp; Updates"</string>
+    <string name="log_out_menu">Log Out</string>
+    <string name="events_menu">Event at ZCOER</string>
 
 
     <string name="open">Open</string>
@@ -52,6 +54,8 @@ Zeal Education Society Engineering and Educational Research (ZEAL’s), Pune , I
 
     <string name="text_title">Take Tastes</string>
     <string name="math_text">Math Tests</string>
+    <string name="title_activity_videos">Videos</string>
+    <string name="title_activity_about">About</string>
 
 
 </resources>
