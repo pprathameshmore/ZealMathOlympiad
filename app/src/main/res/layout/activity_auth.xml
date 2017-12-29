@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/text_box_size"
                         android:layout_marginTop="@dimen/space_between_two_comp"
-                        android:text="@string/confirm" />
+                        android:text="@string/send_btn" />
 
 
                     <EditText

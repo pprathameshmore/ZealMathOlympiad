@@ -12,6 +12,7 @@
     <string name="confirm_otp">Enter OTP</string>
     <string name="confirm_msg">Enter your OTP</string>
     <string name="student_information">Student Information</string>
+    <string name="send_btn">SEND</string>
 
 
     <string name="name">Name : </string>
