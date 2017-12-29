@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">ZealMathOlympiad</string>
+    <string name="sign_up">Sign Up for Zeal Math Olympiad</string>
+    <string name="mobile_number">Enter your Mobile Number</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password_txt">Enter your password</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="title_activity_mobile_number">MobileNumberActivity</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="registered_user">If Already have an account</string>
+    <string name="title_activity_confirm_otp">ConfirmOTPActivity</string>
+    <string name="confirm_otp">Enter OTP</string>
+    <string name="confirm_msg">Enter your OTP</string>
+    <string name="student_information">Student Information</string>
+
+
+    <string name="name">Name : </string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Enter your E-Mail :</string>
+    <string name="address">Enter your E-Mail :</string>
+    <string name="marks">Enter your Marks :</string>
+    <string name="ten">10th</string>
+    <string name="twelve">12th</string>
+    <string name="btn_submit">SUBMIT</string>
+    <string name="address_hint">Enter your address</string>
+
+    <!-- Menus -->
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="tests">Tests</string>
+    <string name="videos">Videos</string>
+    <string name="zeal_clg">Zeal College of Engineering</string>
+    <string name="share">Share app</string>
+    <string name="messages">Messages</string>
+
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <string name="clg_description"> " Zeal Education Society was established in the year 1996. We made a humble beginning through Silver Crest School and Dyanganga College of Education (B.Ed and D.Ed) in the year 2006. In the following years we grew bigger and launched Zeal College of Engineering and Research (ZCOER) in 2007, Zeal Polytechnic in 2008 and Zeal Institute of Management and Computer Application (ZIMCA) in 2009. Just like the famous phrase ‘a rolling stone gathers no moss’, we are constantly evolving whether it be infrastructure, number of labs, faculty members or student intake.
+
+We want to create the future of India by providing technical education to the masses. We believe in nurturing a student from his early years till their graduation and beyond. With this view we established several technical institutes give our students an opportunity to grow with us and become qualified. We have a variety of streams available under one umbrella of ZES. It also gives students the opportunity to become full blown flowers from a bud.
+
+Shri S. M. Katkar
+(Founder, Executive President,
+Zeal Education Society Engineering and Educational Research (ZEAL’s), Pune , India.) " </string>
+
+    <string name="welcome_txt">Welcome to ZEAL MATH OLYMPIAD 2017-18</string>
+
+    <string name="text_title">Take Tastes</string>
+    <string name="math_text">Math Tests</string>
+
+
+</resources>
