@@ -81,6 +81,8 @@ public class AuthActivity extends AppCompatActivity {
             public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
 
                 signInWithPhoneAuthCredential(phoneAuthCredential);
+                Intent startStudentInfoActivity = new Intent(AuthActivity.this, StudentInfo.class);
+                startActivity(startStudentInfoActivity);
             }
 
             @Override
