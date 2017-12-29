@@ -35,7 +35,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.prathameshmore.zealmatholympiad.MainActivity" />
         </activity>
-        <activity android:name=".StudyMaterial"></activity>
+        <activity android:name=".StudyMaterial" />
+        <activity android:name=".StudentInfo"></activity>
     </application>
 
 </manifest>

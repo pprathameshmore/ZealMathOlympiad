@@ -15,7 +15,7 @@
     <string name="send_btn">SEND</string>
 
 
-    <string name="name">Name : </string>
+    <string name="name">Enter your Name : </string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="email">Enter your E-Mail :</string>
@@ -25,6 +25,7 @@
     <string name="twelve">12th</string>
     <string name="btn_submit">SUBMIT</string>
     <string name="address_hint">Enter your address</string>
+    <string name="interest">Your Interest : </string>
 
     <!-- Menus -->
     <string name="home">Home</string>
