@@ -28,7 +28,7 @@
 
 
     <item
-        android:id="@+id/notice_menu"
+        android:id="@+id/news_menu"
         android:icon="@mipmap/ic_forum_black_24dp"
         android:title="@string/messages">
 
