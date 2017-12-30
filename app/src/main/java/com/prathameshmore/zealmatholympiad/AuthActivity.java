@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,6 +30,7 @@ public class AuthActivity extends AppCompatActivity {
 
     private Button mSendBtn;
     private EditText mGetNumber;
+    private TextView textViewHelp;
 
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
     private FirebaseAuth mAuth;
@@ -45,6 +47,8 @@ public class AuthActivity extends AppCompatActivity {
 
         mSendBtn = (Button) findViewById(R.id.btn_confirm_mobile_number);
         mGetNumber = (EditText) findViewById(R.id.get_number);
+
+        textViewHelp = (TextView) findViewById(R.id.help_text_view);
 
         mSendBtn.isEnabled();
 
@@ -70,11 +74,25 @@ public class AuthActivity extends AppCompatActivity {
                     );
 
                     Toast.makeText(AuthActivity.this, "Sending...", Toast.LENGTH_SHORT).show();
+
                 }
 
 
             }
         });
+
+        //Navigate to About Page
+
+        textViewHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent startaboutActivity = new Intent(AuthActivity.this, About.class);
+                startActivity(startaboutActivity);
+
+            }
+        });
+
 
         mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             @Override
@@ -90,6 +108,7 @@ public class AuthActivity extends AppCompatActivity {
             public void onVerificationFailed(FirebaseException e) {
 
                 Toast.makeText(AuthActivity.this, "Error while Registration", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AuthActivity.this, "Try to contact to developers", Toast.LENGTH_LONG).show();
 
             }
 
@@ -99,6 +118,7 @@ public class AuthActivity extends AppCompatActivity {
                 // Save verification ID and resending token so we can use them later
                 mVerificationId = verificationId;
                 mResendToken = token;
+                Toast.makeText(AuthActivity.this, "Verification code sent", Toast.LENGTH_SHORT).show();
 
                 // ...
             }
