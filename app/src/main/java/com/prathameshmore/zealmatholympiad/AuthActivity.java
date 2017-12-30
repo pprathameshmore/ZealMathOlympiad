@@ -83,6 +83,7 @@ public class AuthActivity extends AppCompatActivity {
                 signInWithPhoneAuthCredential(phoneAuthCredential);
                 Intent startStudentInfoActivity = new Intent(AuthActivity.this, StudentInfo.class);
                 startActivity(startStudentInfoActivity);
+                Toast.makeText(AuthActivity.this,"Mobile Number Verified", Toast.LENGTH_SHORT ).show();
             }
 
             @Override

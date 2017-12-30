@@ -72,7 +72,7 @@ public class StudentInfo extends AppCompatActivity {
                     FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                     databaseReference.child(firebaseUser.getPhoneNumber()).setValue(studentInformation);
 
-                    Toast.makeText(StudentInfo.this, "Information Submitted Successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(StudentInfo.this, "Information Submitted Successfully", Toast.LENGTH_LONG).show();
 
                     Intent startMainActivity = new Intent(StudentInfo.this, MainActivity.class);
                     startActivity(startMainActivity);

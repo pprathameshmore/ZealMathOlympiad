@@ -36,7 +36,9 @@
                 android:value="com.prathameshmore.zealmatholympiad.MainActivity" />
         </activity>
         <activity android:name=".StudyMaterial" />
-        <activity android:name=".StudentInfo"></activity>
+        <activity android:name=".StudentInfo" />
+        <activity android:name=".NewsUpdates" />
+        <activity android:name=".AboutZCOER"></activity>
     </application>
 
 </manifest>

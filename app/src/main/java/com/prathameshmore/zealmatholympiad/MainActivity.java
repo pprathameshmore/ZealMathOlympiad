@@ -2,6 +2,7 @@ package com.prathameshmore.zealmatholympiad;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.support.annotation.MainThread;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -9,6 +10,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -44,11 +46,43 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 switch (item.getItemId()) {
+                    case R.id.home_menu:
+                        mDrawerLayout.closeDrawers();
+                        break;
+
+
+                    case R.id.tests_menu:
+                        Intent startStudyActivity = new Intent(MainActivity.this, StudyMaterial.class);
+                        startActivity(startStudyActivity);
+                        break;
+
                     case R.id.video_menu:
                         Intent startVideosActivity = new Intent(MainActivity.this, Videos.class);
                         startActivity(startVideosActivity);
 
+
+                    case R.id.news_menu:
+                        Intent startNewsUpdatesActivity = new Intent(MainActivity.this, NewsUpdates.class);
+                        startActivity(startNewsUpdatesActivity);
                         break;
+
+                    case R.id.zeal_clg_menu:
+                        Intent startAboutZCOERActivity = new Intent(MainActivity.this, AboutZCOER.class);
+                        startActivity(startAboutZCOERActivity);
+                        break;
+
+                    case R.id.about_menu:
+                        Intent startAboutActivity = new Intent(MainActivity.this, About.class);
+                        startActivity(startAboutActivity);
+                        break;
+
+                    case R.id.log_out_menu:
+                        mAuth.signOut();
+                        Intent startSignInActivity = new Intent(MainActivity.this, AuthActivity.class);
+                        startActivity(startSignInActivity);
+                        Toast.makeText(MainActivity.this, "Sign Out Succesfully", Toast.LENGTH_SHORT).show();
+                        break;
+                        
 
                     case R.id.share_menu:
                         Intent email = new Intent(Intent.ACTION_SEND);
@@ -57,16 +91,7 @@ public class MainActivity extends AppCompatActivity {
                         email.putExtra(Intent.EXTRA_TEXT, "Download Zeal Math Olympiad Android app, Try here : http://");
                         break;
 
-                    case R.id.about_menu:
-                        Intent startAboutActivity = new Intent(MainActivity.this , About.class);
-                        startActivity(startAboutActivity);
-                        break;
 
-
-                    case R.id.tests_menu:
-                        Intent startStudyActivity = new Intent(MainActivity.this, StudyMaterial.class);
-                        startActivity(startStudyActivity);
-                        break;
                 }
 
 
@@ -103,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
 
 
 }
