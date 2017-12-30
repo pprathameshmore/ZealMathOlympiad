@@ -46,7 +46,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/text_box_size"
                     android:layout_marginTop="@dimen/space_between_two_comp"
-                    android:hint="@string/mobile_number" />
+                    android:hint="@string/mobile_number"
+                    android:inputType="phone"/>
 
                 <Button
                     android:id="@+id/btn_confirm_mobile_number"

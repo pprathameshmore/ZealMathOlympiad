@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ZealMathOlympiad</string>
+    <string name="app_name">Zeal Math Olympiad</string>
     <string name="sign_up">Sign Up for Zeal Math Olympiad</string>
     <string name="mobile_number">Enter your Mobile Number</string>
     <string name="sign_in">Sign In</string>
@@ -14,7 +14,7 @@
     <string name="student_information">Student Information</string>
     <string name="send_btn">SEND</string>
 
-    <string name="help_text">"I'm having trouble logging in"</string>
+    <string name="help_text">"I'm having trouble"</string>
 
 
     <string name="name">Enter your Name : </string>

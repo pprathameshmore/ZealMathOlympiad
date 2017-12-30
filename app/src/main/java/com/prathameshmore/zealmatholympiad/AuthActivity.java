@@ -57,6 +57,7 @@ public class AuthActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                String countryCode = "+91";
                 String phoneNumber = mGetNumber.getText().toString();
 
 
@@ -64,9 +65,9 @@ public class AuthActivity extends AppCompatActivity {
 
                     mGetNumber.setError("Mobile Number can not be empty");
 
-                } else {
+                } else if (mGetNumber.getText().length() == 10) {
                     PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                            phoneNumber,
+                            countryCode + phoneNumber,
                             60,
                             TimeUnit.SECONDS,
                             AuthActivity.this,
@@ -74,6 +75,10 @@ public class AuthActivity extends AppCompatActivity {
                     );
 
                     Toast.makeText(AuthActivity.this, "Sending...", Toast.LENGTH_SHORT).show();
+
+                } else {
+
+                    mGetNumber.setError("Enter valid number");
 
                 }
 
@@ -101,7 +106,7 @@ public class AuthActivity extends AppCompatActivity {
                 signInWithPhoneAuthCredential(phoneAuthCredential);
                 Intent startStudentInfoActivity = new Intent(AuthActivity.this, StudentInfo.class);
                 startActivity(startStudentInfoActivity);
-                Toast.makeText(AuthActivity.this,"Mobile Number Verified", Toast.LENGTH_SHORT ).show();
+                Toast.makeText(AuthActivity.this, "Mobile Number Verified", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -125,7 +130,6 @@ public class AuthActivity extends AppCompatActivity {
         };
 
     }
-
 
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
