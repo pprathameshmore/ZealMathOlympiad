@@ -12,4 +12,6 @@
 
     <dimen name="study_text_card_view">20dp</dimen>
 
+    <dimen name="corner_radius">5dp</dimen>
+
 </resources>

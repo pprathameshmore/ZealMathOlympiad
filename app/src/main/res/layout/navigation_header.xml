@@ -2,12 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/math_header_blur">
 
 
 
 
-        <TextView
+
+        <com.antonionicolaspina.revealtextview.RevealTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/welcome_txt"
@@ -16,7 +18,7 @@
             android:layout_centerInParent="true"
             android:textSize="20dp"
             android:textStyle="bold"
-            />
+            app:rtv_duration="2000"/>
 
 
 
