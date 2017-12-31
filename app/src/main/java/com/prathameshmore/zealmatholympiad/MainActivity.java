@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(startSignInActivity);
                         Toast.makeText(MainActivity.this, "Log Out Successfully", Toast.LENGTH_SHORT).show();
                         break;
-                        
+
 
                     case R.id.share_menu:
                         Intent email = new Intent(Intent.ACTION_SEND);
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Need to uncomment
-  /*  public void onStart() {
+    public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
             finish();
 
         }
-    } */
+    }
 
 
 }
