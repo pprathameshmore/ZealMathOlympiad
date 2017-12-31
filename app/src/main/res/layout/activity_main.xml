@@ -23,33 +23,34 @@
                 android:layout_marginBottom="20dp"
                 android:orientation="vertical">
 
-
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="@dimen/corner_radius">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/logo_wide" />
+                        android:src="@drawable/logo_wide"
+                        />
 
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="5dp">
+                    android:layout_marginTop="5dp"
+                    app:cardCornerRadius="@dimen/corner_radius">
 
-                    <TextView
+                    <com.antonionicolaspina.revealtextview.RevealTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
-
                         android:layout_gravity="center_horizontal"
                         android:background="@drawable/ripple_effect"
                         android:clickable="true"
                         android:gravity="center_vertical"
-                        android:text="@string/clg_description" />
+                        android:text="@string/clg_description"
+                        app:rtv_duration="1000"/>
 
                 </android.support.v7.widget.CardView>
 
