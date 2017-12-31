@@ -92,7 +92,7 @@ public class AuthActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent startaboutActivity = new Intent(AuthActivity.this, About.class);
+                Intent startaboutActivity = new Intent(AuthActivity.this, MainActivity.class);
                 startActivity(startaboutActivity);
 
             }

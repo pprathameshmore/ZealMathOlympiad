@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                         mAuth.signOut();
                         Intent startSignInActivity = new Intent(MainActivity.this, AuthActivity.class);
                         startActivity(startSignInActivity);
-                        Toast.makeText(MainActivity.this, "Sign Out Succesfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Log Out Successfully", Toast.LENGTH_SHORT).show();
                         break;
                         
 
@@ -114,8 +114,8 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-    public void onStart() {
+    //Need to uncomment
+  /*  public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
             finish();
 
         }
-    }
+    } */
 
 
 }
