@@ -4,24 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ripple_effect"
     tools:context="com.prathameshmore.zealmatholympiad.StudentInfo">
 
-
-    <android.support.v7.widget.CardView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="@dimen/card_view">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
 
-        <ScrollView
+        >
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            app:cardCornerRadius="@dimen/corner_radius">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="30px"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
                 android:background="@drawable/ripple_effect"
                 android:clickable="true"
                 android:orientation="vertical">
@@ -35,151 +41,218 @@
                     android:textSize="@dimen/text_size" />
 
 
-                <LinearLayout
+                <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/space_between_two_comp"
-                    android:orientation="vertical">
+                    android:layout_margin="@dimen/card_student_dimens"
+                    app:cardCornerRadius="@dimen/corner_radius">
 
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/name" />
-
-                    <EditText
-                        android:id="@+id/editTextFirstName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/first_name"
-                        android:inputType="textPersonName" />
-
-
-                    <EditText
-                        android:id="@+id/editTextLastName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20px"
-                        android:hint="@string/last_name"
-                        android:inputType="textPersonName" />
-
-                </LinearLayout>
-
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/card_student_dimens"
                         android:layout_marginTop="@dimen/space_between_two_comp"
-                        android:text="@string/mobile_number" />
+                        android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/editTextMobileNumber"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Mobile Number"
-                        android:inputType="textEmailAddress" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name" />
 
-                </LinearLayout>
+                        <EditText
+                            android:id="@+id/editTextFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/first_name"
+                            android:inputType="textPersonName" />
 
 
-                <LinearLayout
+                        <EditText
+                            android:id="@+id/editTextLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20px"
+                            android:hint="@string/last_name"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="@dimen/corner_radius">
 
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/space_between_two_comp"
-                        android:text="@string/email" />
-
-                    <EditText
-                        android:id="@+id/editTextEmail"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="E-mail"
-                        android:inputType="textEmailAddress" />
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
 
-                </LinearLayout>
 
-                <LinearLayout
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:text="@string/mobile_number" />
+
+                        <EditText
+                            android:id="@+id/editTextMobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile Number"
+                            android:inputType="textEmailAddress" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_margin="@dimen/card_student_dimens"
+                    app:cardCornerRadius="@dimen/corner_radius">
 
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/space_between_two_comp"
-                        android:text="Enter your Address :" />
-
-                    <EditText
-                        android:id="@+id/editTextAddress"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/address_hint"
-                        android:inputType="textPostalAddress" />
-
-                </LinearLayout>
+                        android:layout_margin="@dimen/card_student_dimens"
+                        android:orientation="vertical">
 
 
-                <LinearLayout
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email" />
+
+                        <EditText
+                            android:id="@+id/editTextEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="E-mail"
+                            android:inputType="textEmailAddress" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_margin="@dimen/card_student_dimens"
+                    app:cardCornerRadius="@dimen/corner_radius">
 
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/space_between_two_comp"
-                        android:text="@string/marks" />
-
-                    <EditText
-                        android:id="@+id/editTextMarks10"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/ten"
-                        android:inputType="numberDecimal" />
+                        android:layout_margin="@dimen/card_student_dimens"
+                        android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/editTextMarks12"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/twelve"
-                        android:inputType="numberDecimal" />
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Enter your Address :" />
 
-                <LinearLayout
+                        <EditText
+                            android:id="@+id/editStreetAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/street_name"
+                            android:inputType="textPostalAddress" />
+
+                        <EditText
+                            android:id="@+id/editCityName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/city_name" />
+
+                        <EditText
+                            android:id="@+id/editPinCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/pin_code" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_margin="@dimen/card_student_dimens"
+                    app:cardCornerRadius="@dimen/corner_radius">
 
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/space_between_two_comp"
-                        android:text="Interests" />
-
-                    <EditText
-                        android:id="@+id/editTextInterests"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="e.g. Engineering/BSC/Medical/BSA etc"
-                        />
+                        android:layout_margin="@dimen/card_student_dimens"
+                        android:orientation="vertical">
 
-                </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/marks" />
+
+                        <EditText
+                            android:id="@+id/editTextMarks10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/ten"
+                            android:inputType="numberDecimal" />
+
+                        <EditText
+                            android:id="@+id/editTextMarks12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/twelve"
+                            android:inputType="numberDecimal" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/card_student_dimens"
+                    app:cardCornerRadius="@dimen/corner_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/card_student_dimens"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Interests" />
+
+                        <EditText
+                            android:id="@+id/editTextInterests"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="e.g. Engineering/BSC/Medical/BSA etc" />
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
 
 
                 <Button
@@ -192,9 +265,11 @@
 
             </LinearLayout>
 
-        </ScrollView>
 
-    </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
+
+
+    </ScrollView>
 
 
 </RelativeLayout>

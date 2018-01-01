@@ -92,8 +92,8 @@ public class AuthActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent startaboutActivity = new Intent(AuthActivity.this, MainActivity.class);
-                startActivity(startaboutActivity);
+                Intent startAboutActivity = new Intent(AuthActivity.this, MainActivity.class);
+                startActivity(startAboutActivity);
 
             }
         });
@@ -113,7 +113,7 @@ public class AuthActivity extends AppCompatActivity {
             public void onVerificationFailed(FirebaseException e) {
 
                 Toast.makeText(AuthActivity.this, "Error while Registration", Toast.LENGTH_SHORT).show();
-                Toast.makeText(AuthActivity.this, "Try to contact to developers", Toast.LENGTH_LONG).show();
+                Toast.makeText(AuthActivity.this, "Try to contact developers", Toast.LENGTH_LONG).show();
 
             }
 

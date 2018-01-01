@@ -23,10 +23,16 @@ public class StudentInfo extends AppCompatActivity {
     private EditText editTextLastName;
     private EditText editTextMobileNumber;
     private EditText editTextEmail;
-    private EditText editTextAddress;
+    private EditText editStreetName;
+    private EditText editCityName;
+    private EditText editPinCode;
     private EditText editTextMarksTenth;
     private EditText editTextmarksTwelfth;
     private EditText editTextInterest;
+
+    //private String interestItem;
+
+    //private Spinner interestSpinner;
 
     @Override
 
@@ -42,19 +48,20 @@ public class StudentInfo extends AppCompatActivity {
         editTextLastName = (EditText) findViewById(R.id.editTextLastName);
         editTextMobileNumber = (EditText) findViewById(R.id.editTextMobileNumber);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
-        editTextAddress = (EditText) findViewById(R.id.editTextAddress);
+        editStreetName = (EditText) findViewById(R.id.editStreetAddress);
+        editCityName = (EditText) findViewById(R.id.editCityName);
+        editPinCode = (EditText) findViewById(R.id.editPinCode);
         editTextMarksTenth = (EditText) findViewById(R.id.editTextMarks10);
         editTextmarksTwelfth = (EditText) findViewById(R.id.editTextMarks12);
         editTextInterest = (EditText) findViewById(R.id.editTextInterests);
-
 
         buttonSaveInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if (editTextFirstName.getText().length() == 0 || editTextLastName.getText().length() == 0 || editTextMobileNumber.getText().length() == 0 || editTextEmail.getText().length() == 0 || editTextAddress.getText().length() == 0 || editTextMarksTenth.getText().length() == 0 || editTextmarksTwelfth.getText().length() == 0 || editTextInterest.getText().length() == 0) {
+                if (editTextFirstName.getText().length() == 0 || editTextLastName.getText().length() == 0 || editTextMobileNumber.getText().length() == 0 || editTextEmail.getText().length() == 0 || editStreetName.getText().length() == 0 || editCityName.getText().length() == 0 || editPinCode.getText().length() == 0 || editTextMarksTenth.getText().length() == 0 || editTextmarksTwelfth.getText().length() == 0 || editTextInterest.getText().length() == 0) {
 
-                    Toast.makeText(StudentInfo.this, "Please fill the all information", Toast.LENGTH_LONG).show();
+                    Toast.makeText(StudentInfo.this, "Please fill the all information", Toast.LENGTH_SHORT).show();
 
                 } else {
 
@@ -62,12 +69,14 @@ public class StudentInfo extends AppCompatActivity {
                     String lastName = editTextLastName.getText().toString().trim();
                     String mobileNumber = editTextMobileNumber.getText().toString().trim();
                     String email = editTextEmail.getText().toString().trim();
-                    String address = editTextAddress.getText().toString().trim();
+                    String streetName = editStreetName.getText().toString().trim();
+                    String cityName = editCityName.getText().toString().trim();
+                    String pinCode = editPinCode.getText().toString().trim();
                     String tenthMarks = editTextMarksTenth.getText().toString().trim();
                     String twelfthMarks = editTextmarksTwelfth.getText().toString().trim();
                     String interests = editTextInterest.getText().toString().trim();
 
-                    StudentInformation studentInformation = new StudentInformation(firstName, lastName, mobileNumber, address, email, tenthMarks, twelfthMarks, interests);
+                    StudentInformation studentInformation = new StudentInformation(firstName, lastName, mobileNumber, email, streetName, cityName, pinCode, tenthMarks, twelfthMarks, interests);
 
                     FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                     databaseReference.child(firebaseUser.getPhoneNumber()).setValue(studentInformation);
@@ -82,4 +91,5 @@ public class StudentInfo extends AppCompatActivity {
         });
 
     }
+
 }
