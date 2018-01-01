@@ -85,10 +85,8 @@ public class MainActivity extends AppCompatActivity {
 
 
                     case R.id.share_menu:
-                        Intent email = new Intent(Intent.ACTION_SEND);
-                        email.putExtra(Intent.EXTRA_EMAIL, new String[]{" "});
-                        email.putExtra(Intent.EXTRA_SUBJECT, "Hey, Try this awesome app");
-                        email.putExtra(Intent.EXTRA_TEXT, "Download Zeal Math Olympiad Android app, Try here : http://");
+                        Intent startActivity = new Intent(MainActivity.this,StudentInfo.class);
+                        startActivity(startActivity);
                         break;
 
 

@@ -1,5 +1,6 @@
 package com.prathameshmore.zealmatholympiad;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ public class StudentInfo extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private DatabaseReference databaseReference;
+
+    private ProgressDialog mProgressDialog;
 
     private Button buttonSaveInfo;
     private EditText editTextFirstName;

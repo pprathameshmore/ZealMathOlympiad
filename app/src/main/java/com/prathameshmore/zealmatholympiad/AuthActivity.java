@@ -36,7 +36,6 @@ public class AuthActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String mVerificationId;
     private PhoneAuthProvider.ForceResendingToken mResendToken;
-    private ProgressDialog mProgressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +51,8 @@ public class AuthActivity extends AppCompatActivity {
 
         mSendBtn.isEnabled();
 
+        final ProgressDialog mPrograDialog = new ProgressDialog(AuthActivity.this);
+
 
         mSendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +67,8 @@ public class AuthActivity extends AppCompatActivity {
                     mGetNumber.setError("Mobile Number can not be empty");
 
                 } else if (mGetNumber.getText().length() == 10) {
+
+
                     PhoneAuthProvider.getInstance().verifyPhoneNumber(
                             countryCode + phoneNumber,
                             60,
@@ -73,6 +76,7 @@ public class AuthActivity extends AppCompatActivity {
                             AuthActivity.this,
                             mCallbacks
                     );
+
 
                     Toast.makeText(AuthActivity.this, "Sending...", Toast.LENGTH_SHORT).show();
 
