@@ -64,16 +64,15 @@ Zeal Education Society Engineering and Educational Research (ZEAL’s), Pune , I
     <string name="title_activity_about">About</string>
 
 
-        <string-array name="planets_array">
-            <item>Mercury</item>
-            <item>Venus</item>
-            <item>Earth</item>
-            <item>Mars</item>
-            <item>Jupiter</item>
-            <item>Saturn</item>
-            <item>Uranus</item>
-            <item>Neptune</item>
-        </string-array>
-
-
+    <!-- Math MCQs -->
+    <string name="m_1"> "In Gaussian reduction procedure, row operations are performed to transform matrix A into..."</string>
+    <string name="m_2">Method used to for two and three variable systems is the</string>
+    <string name="m_3">Condition in Gaussian reduction procedure in which matrix A can be transformed into an identity matrix if matrix is</string>
+    <string name="m_4">The system of equations 2x + 3y = 5 and 4x + 6y  = 10 has </string>
+    <string name="m_5">If AB = 0  and BA ≠ 0 then necessarily</string>
+    <string name="m_6">How many solution are there for x<sup>5</sup> + 4x = 1</string>
+    <string name="m_7">The mean value theorem only tells you the derivative of one point, is it true</string>
+    <string name="m_8">"If Rolle's theorem applies to every possible interval on a function,"</string>
+    <string name="m_9">The rate at which  population of the city increases  is proportional to the number present at that instant. Within a period of 30 yrs, population grows from 40 lakhs to 80 lakhs.What will be the  population of the city after further period of 15 yrs?</string>
+    <string name="m_10">If the particle moves in a straight line with velocity then the time required by the particle to travel a distance 99 meters is</string>
 </resources>

@@ -16,4 +16,9 @@
     
     <dimen name="card_student_dimens">5dp</dimen>
 
+    <dimen name="five_dp">8dp</dimen>
+
+
+    <dimen name="text_size_mcq">10sp</dimen>
+
 </resources>

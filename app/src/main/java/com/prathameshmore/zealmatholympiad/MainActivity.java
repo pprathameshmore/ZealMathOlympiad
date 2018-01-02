@@ -54,26 +54,32 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.tests_menu:
                         Intent startStudyActivity = new Intent(MainActivity.this, StudyMaterial.class);
                         startActivity(startStudyActivity);
+                        mDrawerLayout.closeDrawers();
                         break;
 
                     case R.id.video_menu:
                         Intent startVideosActivity = new Intent(MainActivity.this, Videos.class);
                         startActivity(startVideosActivity);
+                        mDrawerLayout.closeDrawers();
+                        break;
 
 
                     case R.id.news_menu:
                         Intent startNewsUpdatesActivity = new Intent(MainActivity.this, NewsUpdates.class);
                         startActivity(startNewsUpdatesActivity);
+                        mDrawerLayout.closeDrawers();
                         break;
 
                     case R.id.zeal_clg_menu:
                         Intent startAboutZCOERActivity = new Intent(MainActivity.this, AboutZCOER.class);
                         startActivity(startAboutZCOERActivity);
+                        mDrawerLayout.closeDrawers();
                         break;
 
                     case R.id.about_menu:
                         Intent startAboutActivity = new Intent(MainActivity.this, About.class);
                         startActivity(startAboutActivity);
+                        mDrawerLayout.closeDrawers();
                         break;
 
                     case R.id.log_out_menu:
@@ -87,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.share_menu:
                         Intent startActivity = new Intent(MainActivity.this,StudentInfo.class);
                         startActivity(startActivity);
+                        mDrawerLayout.closeDrawers();
                         break;
 
 
@@ -113,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Need to uncomment
+    /*
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -126,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+    */
 
 
 }

@@ -37,6 +37,8 @@ public class AuthActivity extends AppCompatActivity {
     private String mVerificationId;
     private PhoneAuthProvider.ForceResendingToken mResendToken;
 
+    private ProgressDialog mPrograDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +53,7 @@ public class AuthActivity extends AppCompatActivity {
 
         mSendBtn.isEnabled();
 
-        final ProgressDialog mPrograDialog = new ProgressDialog(AuthActivity.this);
+        mPrograDialog = new ProgressDialog(AuthActivity.this);
 
 
         mSendBtn.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +71,11 @@ public class AuthActivity extends AppCompatActivity {
                 } else if (mGetNumber.getText().length() == 10) {
 
 
+                    ProgressDialog showDialog = new ProgressDialog(AuthActivity.this);
+                    showDialog.setMessage("Please wait...");
+                    showDialog.show();
+                    showDialog.setCancelable(false);
+
                     PhoneAuthProvider.getInstance().verifyPhoneNumber(
                             countryCode + phoneNumber,
                             60,
@@ -79,6 +86,8 @@ public class AuthActivity extends AppCompatActivity {
 
 
                     Toast.makeText(AuthActivity.this, "Sending...", Toast.LENGTH_SHORT).show();
+
+                    showDialog.dismiss();
 
                 } else {
 
@@ -144,10 +153,18 @@ public class AuthActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
 
+                            ProgressDialog dialog = new ProgressDialog(AuthActivity.this);
+                            dialog.setMessage("Please Wait...");
+                            dialog.show();
+                            dialog.setCancelable(false);
+
                             FirebaseUser user = task.getResult().getUser();
                             Intent startMainActivity = new Intent(AuthActivity.this, MainActivity.class);
                             startActivity(startMainActivity);
                             finish();
+
+                            dialog.dismiss();
+
                             // ...
                         } else {
                             // Sign in failed, display a message and update the UI
