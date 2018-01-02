@@ -75,4 +75,14 @@ Zeal Education Society Engineering and Educational Research (ZEAL’s), Pune , I
     <string name="m_8">"If Rolle's theorem applies to every possible interval on a function,"</string>
     <string name="m_9">The rate at which  population of the city increases  is proportional to the number present at that instant. Within a period of 30 yrs, population grows from 40 lakhs to 80 lakhs.What will be the  population of the city after further period of 15 yrs?</string>
     <string name="m_10">If the particle moves in a straight line with velocity then the time required by the particle to travel a distance 99 meters is</string>
+    <string name="m_11">"If 10 and percent; of radium disappears in 2 days how long will it take for 50 and percent; to be disappear "</string>
+    <string name="m_12">The decomposition of radioactive material is calculated by the formula</string>
+    <string name="m_13">If 30 and percent; of radium disappears in 10 days how long will it take for 90 and percent to be disappear</string>
+    <string name="m_14">If the population of the city increases continuously then Diff. Eqn used to calculate the population is</string>
+    <string name="m_15">The population of the city increases at a rate  proportional to the population  at that time. The population doubles in 50 yes.After 75 yrs the ratio of population P to the initial population P0 is</string>
+    <string name="m_16">The area of the region bounded by the parabola (y-2)<sup>2</sup> =x-1,the tangent to the parabola at the point (2,3) and the x-axis is</string>
+    <string name="m_17">A copper ball is heated to a temperature of 1000C .Then at time t=0 it is placed in water which is maintained at 300C,then the value of constant if integration is</string>
+    <string name="m_18">The area between the curve y=e<sup>x</sup> from the ordinates x=0 and x=1 is</string>
+    <string name="m_19">The area under the curve y=√(9-x)  and coordinate axis is</string>
+    <string name="m_20">Area under the curve y= logx, the x-axis and the ordinates at x=1 to x=e is</string>
 </resources>
