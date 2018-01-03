@@ -26,20 +26,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.prathameshmore.zealmatholympiad.MainActivity" />
         </activity>
-        <activity
-            android:name=".About"
-            android:label="@string/title_activity_about"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.prathameshmore.zealmatholympiad.MainActivity" />
-        </activity>
         <activity android:name=".StudyMaterial" />
         <activity android:name=".StudentInfo" />
         <activity android:name=".NewsUpdates" />
         <activity android:name=".AboutZCOER" />
-        <activity android:name=".MathTest"></activity>
+        <activity android:name=".MathTest" />
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>

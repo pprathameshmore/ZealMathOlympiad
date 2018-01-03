@@ -21,4 +21,6 @@
 
     <dimen name="text_size_mcq">10sp</dimen>
 
+    <dimen name="linear_layout">10dp</dimen>
+
 </resources>

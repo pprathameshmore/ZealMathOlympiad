@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Zeal Math Olympiad</string>
+    <string name="app_version">1.0 V (2017-2018)</string>
+
     <string name="sign_up">Sign Up for Zeal Math Olympiad</string>
     <string name="mobile_number">Enter your Mobile Number</string>
     <string name="sign_in">Sign In</string>

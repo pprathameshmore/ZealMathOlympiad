@@ -32,8 +32,10 @@ dependencies {
     implementation 'com.android.support:design:26.1.0'
     compile 'com.android.support:cardview-v7:26.1.0'
     compile 'com.antonionicolaspina:revealtextview:2.0'
+    compile 'com.github.medyo:android-about-page:1.2.2'
 
 }
+
 
 
 
