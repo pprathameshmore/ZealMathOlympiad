@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="10dp"
-
         >
 
         <android.support.v7.widget.CardView
@@ -21,7 +20,8 @@
             android:layout_centerVertical="true"
             android:layout_margin="5dp"
             android:clickable="true"
-            app:cardCornerRadius="@dimen/corner_radius">
+            app:cardCornerRadius="@dimen/corner_radius"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -30,7 +30,8 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/ripple_effect"
                 android:clickable="true"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp">
 
 
                 <TextView
@@ -106,7 +107,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Mobile Number"
-                            android:inputType="textEmailAddress" />
+                            android:inputType="phone" />
 
                     </LinearLayout>
 
@@ -179,7 +180,8 @@
                             android:id="@+id/editPinCode"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/pin_code" />
+                            android:hint="@string/pin_code"
+                            android:inputType="number" />
 
                     </LinearLayout>
 
@@ -250,8 +252,7 @@
 
                         <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            ></Spinner>
+                            android:layout_height="wrap_content"></Spinner>
 
 
                     </LinearLayout>
