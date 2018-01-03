@@ -33,7 +33,6 @@ public class AboutZCOER extends AppCompatActivity {
                 .addItem(new Element("8793540892",R.mipmap.ic_call_black_24dp))
                 .addItem(new Element("800 267 2667",R.mipmap.ic_call_black_24dp))
                 .addItem(new Element("S.NO 39, Dhayari Road, Narhe, Pune, Maharashtra 411041, India",R.mipmap.ic_room_black_24dp))
-
                 .create();
         setContentView(aboutZCOER);
 
