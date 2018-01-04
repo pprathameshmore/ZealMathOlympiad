@@ -31,7 +31,8 @@
         <activity android:name=".NewsUpdates" />
         <activity android:name=".AboutZCOER" />
         <activity android:name=".MathTest" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".PhysicsTest"></activity>
     </application>
 
 </manifest>

@@ -12,7 +12,6 @@ import mehdi.sakout.aboutpage.Element;
 
 public class About extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +38,6 @@ public class About extends AppCompatActivity {
                 .addItem(createCopyright())
                 .create();
         setContentView(aboutPage);
-
     }
 
     private Element createCopyright() {
