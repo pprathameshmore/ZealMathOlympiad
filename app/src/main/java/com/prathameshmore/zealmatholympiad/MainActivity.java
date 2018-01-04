@@ -91,8 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     case R.id.share_menu:
-                        Intent startActivity = new Intent(MainActivity.this,StudentInfo.class);
-                        startActivity(startActivity);
+                        Toast.makeText(MainActivity.this, "This Page under development", Toast.LENGTH_SHORT).show();
                         mDrawerLayout.closeDrawers();
                         break;
 

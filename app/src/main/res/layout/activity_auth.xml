@@ -13,15 +13,15 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_margin="@dimen/card_view"
-        app:cardCornerRadius="@dimen/corner_radius"
-        android:background="@drawable/ripple_effect">
+        android:background="@drawable/ripple_effect"
+        app:cardCornerRadius="@dimen/corner_radius">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/ripple_effect"
-            android:orientation="vertical"
-            android:layout_marginBottom="10dp">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="200dp"
@@ -34,8 +34,8 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="@dimen/corner_radius"
-                android:layout_margin="10dp">
+                android:layout_margin="10dp"
+                app:cardCornerRadius="@dimen/corner_radius">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -52,8 +52,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/text_box_size"
                         android:hint="@string/mobile_number"
-                        android:inputType="phone"
-                        />
+                        android:inputType="phone" />
 
                     <Button
                         android:id="@+id/btn_confirm_mobile_number"
@@ -69,10 +68,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:gravity="center_vertical"
                         android:text="@string/help_text"
-                        android:textAlignment="center"
-                        android:layout_marginBottom="10dp"/>
+                        android:textAlignment="center" />
 
 
                 </LinearLayout>
@@ -83,6 +82,14 @@
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/about_zcoer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_layout"
+        android:text="About ZCOER"
+        android:textAlignment="center" />
 
 
 </RelativeLayout>

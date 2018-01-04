@@ -31,6 +31,7 @@ public class AuthActivity extends AppCompatActivity {
     private Button mSendBtn;
     private EditText mGetNumber;
     private TextView textViewHelp;
+    private TextView about_zcoer;
 
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
     private FirebaseAuth mAuth;
@@ -48,6 +49,8 @@ public class AuthActivity extends AppCompatActivity {
         mGetNumber = (EditText) findViewById(R.id.get_number);
 
         textViewHelp = (TextView) findViewById(R.id.help_text_view);
+
+        about_zcoer = (TextView) findViewById(R.id.about_zcoer);
 
 
         mSendBtn.setOnClickListener(new View.OnClickListener() {
@@ -99,9 +102,17 @@ public class AuthActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent startAboutActivity = new Intent(AuthActivity.this, MainActivity.class);
+                Intent startAboutActivity = new Intent(AuthActivity.this, About.class);
                 startActivity(startAboutActivity);
 
+            }
+        });
+
+        about_zcoer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent startAboutZCOER = new Intent(AuthActivity.this, AboutZCOER.class);
+                startActivity(startAboutZCOER);
             }
         });
 

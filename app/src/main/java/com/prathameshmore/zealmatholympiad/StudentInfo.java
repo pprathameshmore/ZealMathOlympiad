@@ -32,7 +32,6 @@ public class StudentInfo extends AppCompatActivity {
     private EditText editPinCode;
     private EditText editTextMarksTenth;
     private EditText editTextmarksTwelfth;
-    private EditText editTextInterest;
 
     private RadioGroup radioGroupInterests;
     private RadioButton radioButton;
@@ -60,7 +59,7 @@ public class StudentInfo extends AppCompatActivity {
         editPinCode = (EditText) findViewById(R.id.editPinCode);
         editTextMarksTenth = (EditText) findViewById(R.id.editTextMarks10);
         editTextmarksTwelfth = (EditText) findViewById(R.id.editTextMarks12);
-        editTextInterest = (EditText) findViewById(R.id.editTextInterests);
+        //editTextInterest = (EditText) findViewById(R.id.editTextInterests);
 
         radioGroupInterests = (RadioGroup) findViewById(R.id.radioGroupInterests);
        /* radioButtonEngineering = (RadioButton) findViewById(R.id.radioButtonEngineering);
