@@ -33,7 +33,8 @@
         <activity android:name=".MathTest" />
         <activity android:name=".About" />
         <activity android:name=".PhysicsTest" />
-        <activity android:name=".ChemistryTest"></activity>
+        <activity android:name=".ChemistryTest" />
+        <activity android:name=".Feedback"></activity>
     </application>
 
 </manifest>

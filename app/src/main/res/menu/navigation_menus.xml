@@ -45,11 +45,21 @@
 
     <item
         android:id="@+id/about_menu"
-        android:icon="@mipmap/ic_feedback_black_24dp"
+        android:icon="@mipmap/ic_info_black_24dp"
         android:title="@string/about">
 
 
     </item>
+
+
+    <item
+        android:id="@+id/feedback_menu"
+        android:icon="@mipmap/ic_message_black_24dp"
+        android:title="Feedback"
+        >
+
+    </item>
+
 
     <item
 
@@ -65,14 +75,6 @@
         android:id="@+id/share_menu"
         android:icon="@mipmap/ic_share_black_24dp"
         android:title="@string/share">
-
-    </item>
-
-    <item
-        android:id="@+id/feedback_menu"
-        android:icon="@mipmap/ic_share_black_24dp"
-        android:title="Feedback"
-        >
 
     </item>
 

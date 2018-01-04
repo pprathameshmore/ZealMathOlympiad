@@ -96,7 +96,10 @@ public class MainActivity extends AppCompatActivity {
                         mDrawerLayout.closeDrawers();
                         break;
 
-
+                    case R.id.feedback_menu:
+                        Intent startFeedbackActivity = new Intent(MainActivity.this,Feedback.class);
+                        startActivity(startFeedbackActivity);
+                        mDrawerLayout.closeDrawers();
                 }
 
 
