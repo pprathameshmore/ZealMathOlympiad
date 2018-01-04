@@ -9,7 +9,8 @@ import android.view.View;
 public class StudyMaterial extends AppCompatActivity {
 
     private CardView mathsCardView;
-    private CardView phyCardView;
+    private CardView physicsCardView;
+    private CardView chemistryCardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +18,7 @@ public class StudyMaterial extends AppCompatActivity {
         setContentView(R.layout.activity_study_material);
 
         mathsCardView = (CardView) findViewById(R.id.maths_card_view);
-        phyCardView = (CardView) findViewById(R.id.phy_card_view);
+        physicsCardView = (CardView) findViewById(R.id.phy_card_view);
 
 
         mathsCardView.setOnClickListener(new View.OnClickListener() {
@@ -33,13 +34,23 @@ public class StudyMaterial extends AppCompatActivity {
         });
 
 
-        phyCardView.setOnClickListener(new View.OnClickListener() {
+        physicsCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent startPhyMCQ = new Intent(StudyMaterial.this, PhysicsTest.class);
 
                 startActivity(startPhyMCQ);
 
+            }
+        });
+
+
+        //Start Chemistry Test Activity
+        chemistryCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent startChemistryMCQ = new Intent(StudyMaterial.this, ChemistryTest.class);
+                startActivity(startChemistryMCQ);
             }
         });
     }
