@@ -2,11 +2,14 @@ package com.prathameshmore.zealmatholympiad;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -18,9 +21,6 @@ public class StudentInfo extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private DatabaseReference databaseReference;
-    private DatabaseReference mDatabaseReferenceUsers;
-
-    private ProgressDialog mProgressDialog;
 
     private Button buttonSaveInfo;
     private EditText editTextFirstName;
@@ -33,6 +33,9 @@ public class StudentInfo extends AppCompatActivity {
     private EditText editTextMarksTenth;
     private EditText editTextmarksTwelfth;
     private EditText editTextInterest;
+
+    private RadioGroup radioGroupInterests;
+    private RadioButton radioButton;
 
     //private String interestItem;
 
@@ -59,15 +62,33 @@ public class StudentInfo extends AppCompatActivity {
         editTextmarksTwelfth = (EditText) findViewById(R.id.editTextMarks12);
         editTextInterest = (EditText) findViewById(R.id.editTextInterests);
 
+        radioGroupInterests = (RadioGroup) findViewById(R.id.radioGroupInterests);
+       /* radioButtonEngineering = (RadioButton) findViewById(R.id.radioButtonEngineering);
+        radioButtonMedical = (RadioButton) findViewById(R.id.radioButtonMedical);
+        radioButtonBSC = (RadioButton) findViewById(R.id.radioButtonBSc);
+        radioButtonBSA = (RadioButton) findViewById(R.id.radioButtonBSA); */
+
         buttonSaveInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if (editTextFirstName.getText().length() == 0 || editTextLastName.getText().length() == 0 || editTextMobileNumber.getText().length() == 0 || editTextEmail.getText().length() == 0 || editStreetName.getText().length() == 0 || editCityName.getText().length() == 0 || editPinCode.getText().length() == 0 || editTextMarksTenth.getText().length() == 0 || editTextmarksTwelfth.getText().length() == 0 || editTextInterest.getText().length() == 0) {
+                if (editTextFirstName.getText().length() == 0 || editTextLastName.getText().length() == 0 || editTextMobileNumber.getText().length() == 0 || editTextEmail.getText().length() == 0 || editStreetName.getText().length() == 0 || editCityName.getText().length() == 0 || editPinCode.getText().length() == 0 || editTextMarksTenth.getText().length() == 0 || editTextmarksTwelfth.getText().length() == 0) {
 
                     Toast.makeText(StudentInfo.this, "Please fill the all information", Toast.LENGTH_SHORT).show();
 
                 } else {
+
+                    int selectedButton = radioGroupInterests.getCheckedRadioButtonId();
+                    /*
+                    radioButtonEngineering = (RadioButton) findViewById(selectedButton);
+                    radioButtonMedical = (RadioButton) findViewById(selectedButton);
+                    radioButtonBSC = (RadioButton) findViewById(selectedButton);
+                    radioButtonBSA = (RadioButton) findViewById(R.id.radioButtonBSA);
+*/
+                    radioButton = (RadioButton) findViewById(selectedButton);
+
+                    String interests = (String) radioButton.getText();
+
 
                     String firstName = editTextFirstName.getText().toString().trim();
                     String lastName = editTextLastName.getText().toString().trim();
@@ -78,7 +99,8 @@ public class StudentInfo extends AppCompatActivity {
                     String pinCode = editPinCode.getText().toString().trim();
                     String tenthMarks = editTextMarksTenth.getText().toString().trim();
                     String twelfthMarks = editTextmarksTwelfth.getText().toString().trim();
-                    String interests = editTextInterest.getText().toString().trim();
+                    //String interests = editTextInterest.getText().toString().trim();
+
 
                     StudentInformation studentInformation = new StudentInformation(firstName, lastName, mobileNumber, email, streetName, cityName, pinCode, tenthMarks, twelfthMarks, interests);
 
@@ -95,5 +117,6 @@ public class StudentInfo extends AppCompatActivity {
         });
 
     }
+
 
 }

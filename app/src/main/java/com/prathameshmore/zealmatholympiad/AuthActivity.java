@@ -37,8 +37,6 @@ public class AuthActivity extends AppCompatActivity {
     private String mVerificationId;
     private PhoneAuthProvider.ForceResendingToken mResendToken;
 
-    private ProgressDialog mPrograDialog;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,10 +48,6 @@ public class AuthActivity extends AppCompatActivity {
         mGetNumber = (EditText) findViewById(R.id.get_number);
 
         textViewHelp = (TextView) findViewById(R.id.help_text_view);
-
-        mSendBtn.isEnabled();
-
-        mPrograDialog = new ProgressDialog(AuthActivity.this);
 
 
         mSendBtn.setOnClickListener(new View.OnClickListener() {
