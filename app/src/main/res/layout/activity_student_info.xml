@@ -253,33 +253,33 @@
                             android:layout_height="wrap_content">
 
                             <RadioGroup
+                                android:id="@+id/radioGroupInterests"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
                                 <RadioButton
+                                    android:id="@+id/radioButtonEngineering"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:text="BE" />
 
                                 <RadioButton
+                                    android:id="@+id/radioButtonMedical"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Medical" />
 
                                 <RadioButton
+                                    android:id="@+id/radioButtonBSc"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="BSc" />
 
                                 <RadioButton
+                                    android:id="@+id/radioButtonBSA"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="BCA" />
-
-                                <RadioButton
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Architecture" />
 
                             </RadioGroup>
 
