@@ -18,6 +18,7 @@ public class StudentInfo extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private DatabaseReference databaseReference;
+    private DatabaseReference mDatabaseReferenceUsers;
 
     private ProgressDialog mProgressDialog;
 
