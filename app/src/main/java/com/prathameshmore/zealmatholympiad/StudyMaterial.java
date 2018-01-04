@@ -19,6 +19,7 @@ public class StudyMaterial extends AppCompatActivity {
 
         mathsCardView = (CardView) findViewById(R.id.maths_card_view);
         physicsCardView = (CardView) findViewById(R.id.phy_card_view);
+        chemistryCardView = (CardView) findViewById(R.id.chemistry_card_view);
 
 
         mathsCardView.setOnClickListener(new View.OnClickListener() {
