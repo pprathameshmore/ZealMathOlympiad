@@ -32,7 +32,8 @@
         <activity android:name=".AboutZCOER" />
         <activity android:name=".MathTest" />
         <activity android:name=".About" />
-        <activity android:name=".PhysicsTest"></activity>
+        <activity android:name=".PhysicsTest" />
+        <activity android:name=".ChemistryTest"></activity>
     </application>
 
 </manifest>

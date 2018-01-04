@@ -11,8 +11,6 @@ public class StudyMaterial extends AppCompatActivity {
     private CardView mathsCardView;
     private CardView phyCardView;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,15 +20,11 @@ public class StudyMaterial extends AppCompatActivity {
         phyCardView = (CardView) findViewById(R.id.phy_card_view);
 
 
-
-
-
-
         mathsCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent startMathsMCQ = new Intent(StudyMaterial.this,MathTest.class);
+                Intent startMathsMCQ = new Intent(StudyMaterial.this, MathTest.class);
                 startActivity(startMathsMCQ);
 
             }
@@ -42,7 +36,7 @@ public class StudyMaterial extends AppCompatActivity {
         phyCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent startPhyMCQ = new Intent(StudyMaterial.this,PhysicsTest.class);
+                Intent startPhyMCQ = new Intent(StudyMaterial.this, PhysicsTest.class);
 
                 startActivity(startPhyMCQ);
 
