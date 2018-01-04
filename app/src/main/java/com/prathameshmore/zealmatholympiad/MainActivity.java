@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         toggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
         _navigation_view = (NavigationView) findViewById(R.id.navigation_view);
 
+        Toast.makeText(this, "This app under development, some feature will not work properly", Toast.LENGTH_SHORT).show();
 
         mDrawerLayout.addDrawerListener(toggle);
         toggle.syncState();
