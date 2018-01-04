@@ -59,13 +59,15 @@
                         android:id="@+id/p1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-
+                        <!--  ans=2  -->
                         <RadioButton
                             android:id="@+id/p1_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=" Energy is uniformly distributed"
                             android:textSize="@dimen/text_size_mcq" />
+
+
 
                         <RadioButton
                             android:id="@+id/p1_2"
@@ -115,40 +117,40 @@
 
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text=" "
+                        android:text="@string/p2"
                         android:textSize="20dp" />
 
                     <RadioGroup
                         android:id="@+id/p2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
+                        <!--  ans=4  -->
                         <RadioButton
                             android:id="@+id/p2_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="MR2/2 " />
 
 
                         <RadioButton
                             android:id="@+id/p2_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text=" MR2/4" />
 
 
                         <RadioButton
                             android:id="@+id/p2_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="MR2" />
 
 
                         <RadioButton
                             android:id="@+id/p2_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="5MR2/4" />
 
 
                     </RadioGroup>

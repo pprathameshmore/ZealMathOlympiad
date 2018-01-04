@@ -89,4 +89,19 @@ Zeal Education Society Engineering and Educational Research (ZEAL’s), Pune , I
     <string name="m_18">The area between the curve y=e<sup>x</sup> from the ordinates x=0 and x=1 is</string>
     <string name="m_19">The area under the curve y=√(9-x)  and coordinate axis is</string>
     <string name="m_20">Area under the curve y= logx, the x-axis and the ordinates at x=1 to x=e is</string>
+
+
+    <!-- Physics MCQs -->
+
+    <string name="p2">M.I. of a thin uniform circular ring about the tangent to the plane of the ring is
+ </string>
+    <string name="p3"> </string>
+    <string name="p4"> </string>
+    <string name="p5"> </string>
+    <string name="p6"> </string>
+    <string name="p7"> </string>
+    <string name="p8"> </string>
+
+
+
 </resources>
