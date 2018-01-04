@@ -68,10 +68,6 @@ public class AuthActivity extends AppCompatActivity {
                 } else if (mGetNumber.getText().length() == 10) {
 
 
-                    ProgressDialog showDialog = new ProgressDialog(AuthActivity.this);
-                    showDialog.setMessage("Please wait...");
-                    showDialog.show();
-                    showDialog.setCancelable(false);
 
                     PhoneAuthProvider.getInstance().verifyPhoneNumber(
                             countryCode + phoneNumber,
@@ -84,7 +80,6 @@ public class AuthActivity extends AppCompatActivity {
 
                     Toast.makeText(AuthActivity.this, "Sending...", Toast.LENGTH_SHORT).show();
 
-                    showDialog.dismiss();
 
                 } else {
 
@@ -158,17 +153,11 @@ public class AuthActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
 
-                            ProgressDialog dialog = new ProgressDialog(AuthActivity.this);
-                            dialog.setMessage("Please Wait...");
-                            dialog.show();
-                            dialog.setCancelable(false);
 
                             FirebaseUser user = task.getResult().getUser();
                             Intent startMainActivity = new Intent(AuthActivity.this, MainActivity.class);
                             startActivity(startMainActivity);
                             finish();
-
-                            dialog.dismiss();
 
                             // ...
                         } else {
