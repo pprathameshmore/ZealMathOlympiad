@@ -27,14 +27,9 @@ public class About extends AppCompatActivity {
                 .addWebsite("http://www.about.me/prathameshmore")
                 .addFacebook("pprathameshmore","Prathamesh More")
                 .addFacebook("santoshkumar.vijapure","Santosh Vijapure")
-                .addTwitter("pprathameshmore","Prathamesh More")
-                .addTwitter("vijapure_h","Santosh Vijapure")
-                .addYoutube("UC48QuhKjplEM1cLIPPK-Myw")
                 .addPlayStore("com.ideashower.readitlater.pro")
                 .addGitHub("pprathameshmore","Prathamesh More")
                 .addGitHub("santosh62","Santosh Vijapure")
-                .addInstagram("pprathameshmore","Prathamesh More")
-                .addInstagram("santosh622","Santosh Vijapure")
                 .addItem(createCopyright())
                 .create();
         setContentView(aboutPage);
