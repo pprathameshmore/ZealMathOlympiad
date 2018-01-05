@@ -17,15 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".AuthActivity" />
-        <activity
-            android:name=".Videos"
-            android:label="@string/title_activity_videos"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.prathameshmore.zealmatholympiad.MainActivity" />
-        </activity>
         <activity android:name=".StudyMaterial" />
         <activity android:name=".StudentInfo" />
         <activity android:name=".NewsUpdates" />
@@ -34,7 +25,8 @@
         <activity android:name=".About" />
         <activity android:name=".PhysicsTest" />
         <activity android:name=".ChemistryTest" />
-        <activity android:name=".Feedback"></activity>
+        <activity android:name=".Feedback" />
+        <activity android:name=".Videos"></activity>
     </application>
 
 </manifest>
