@@ -150,14 +150,13 @@ public class AuthActivity extends AppCompatActivity {
                 signInWithPhoneAuthCredential(phoneAuthCredential);
                 Intent startStudentInfoActivity = new Intent(AuthActivity.this, StudentInfo.class);
                 startActivity(startStudentInfoActivity);
-                Snackbar.make(textViewHelp, "Mobile Number Verified", Snackbar.LENGTH_LONG).show();
                 Toast.makeText(AuthActivity.this, "Mobile Number Verified", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onVerificationFailed(FirebaseException e) {
 
-                Snackbar.make(textViewHelp, "Error while registration", Snackbar.LENGTH_LONG).show();
+                Toast.makeText(AuthActivity.this, "Error while registration", Toast.LENGTH_SHORT).show();
 
             }
 
@@ -169,6 +168,8 @@ public class AuthActivity extends AppCompatActivity {
                 mSendBtn.setEnabled(false);
                 mGetNumber.setEnabled(false);
 
+                get_code.setEnabled(true);
+                mVerifyBtn.setEnabled(true);
 
                 Toast.makeText(AuthActivity.this, "Verification code sent", Toast.LENGTH_SHORT).show();
                 // Save verification ID and resending token so we can use them later
