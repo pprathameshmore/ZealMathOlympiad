@@ -59,8 +59,24 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/text_box_size"
-                        android:layout_marginTop="@dimen/space_between_two_comp"
+                        android:layout_marginTop="30px"
                         android:text="@string/confirm" />
+
+
+                    <EditText
+                        android:id="@+id/get_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Verification code"
+                        android:layout_margin="20px"/>
+
+                    <Button
+                        android:id="@+id/buttonVerifyCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Verify"
+                        android:layout_marginTop="30px"
+                        android:layout_margin="20px"/>
 
 
                     <TextView
@@ -71,7 +87,8 @@
                         android:layout_marginBottom="10dp"
                         android:gravity="center_vertical"
                         android:text="@string/help_text"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        />
 
 
                 </LinearLayout>

@@ -3,6 +3,7 @@ package com.prathameshmore.zealmatholympiad;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -32,6 +33,10 @@ public class AuthActivity extends AppCompatActivity {
     private EditText mGetNumber;
     private TextView textViewHelp;
     private TextView about_zcoer;
+    private EditText get_code;
+    private Button mVerifyBtn;
+
+    private int btnType = 0;
 
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
     private FirebaseAuth mAuth;
@@ -52,6 +57,12 @@ public class AuthActivity extends AppCompatActivity {
 
         about_zcoer = (TextView) findViewById(R.id.about_zcoer);
 
+        get_code = (EditText) findViewById(R.id.get_code);
+
+        mVerifyBtn = (Button) findViewById(R.id.buttonVerifyCode);
+
+        get_code.setEnabled(false);
+        mVerifyBtn.setEnabled(false);
 
         mSendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +79,6 @@ public class AuthActivity extends AppCompatActivity {
                 } else if (mGetNumber.getText().length() == 10) {
 
 
-
                     PhoneAuthProvider.getInstance().verifyPhoneNumber(
                             countryCode + phoneNumber,
                             60,
@@ -77,13 +87,34 @@ public class AuthActivity extends AppCompatActivity {
                             mCallbacks
                     );
 
-
                     Toast.makeText(AuthActivity.this, "Sending...", Toast.LENGTH_SHORT).show();
 
 
                 } else {
 
                     mGetNumber.setError("Enter valid number");
+
+                }
+
+
+            }
+        });
+
+        mVerifyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                if (get_code.getText().length() != 0) {
+
+                    String verificationCode = get_code.getText().toString();
+                    PhoneAuthCredential phoneAuthCredential = PhoneAuthProvider.getCredential(verificationCode, mVerificationId);
+                    signInWithPhoneAuthCredential(phoneAuthCredential);
+
+                } else {
+
+                    get_code.setError("Enter verification code");
+
 
                 }
 
@@ -119,24 +150,31 @@ public class AuthActivity extends AppCompatActivity {
                 signInWithPhoneAuthCredential(phoneAuthCredential);
                 Intent startStudentInfoActivity = new Intent(AuthActivity.this, StudentInfo.class);
                 startActivity(startStudentInfoActivity);
+                Snackbar.make(textViewHelp, "Mobile Number Verified", Snackbar.LENGTH_LONG).show();
                 Toast.makeText(AuthActivity.this, "Mobile Number Verified", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onVerificationFailed(FirebaseException e) {
 
-                Toast.makeText(AuthActivity.this, "Error while Registration", Toast.LENGTH_SHORT).show();
-                Toast.makeText(AuthActivity.this, "Try to contact developers", Toast.LENGTH_LONG).show();
+                Snackbar.make(textViewHelp, "Error while registration", Snackbar.LENGTH_LONG).show();
 
             }
 
             public void onCodeSent(String verificationId,
                                    PhoneAuthProvider.ForceResendingToken token) {
 
+
+                btnType = 1;
+                mSendBtn.setEnabled(false);
+                mGetNumber.setEnabled(false);
+
+
+                Toast.makeText(AuthActivity.this, "Verification code sent", Toast.LENGTH_SHORT).show();
                 // Save verification ID and resending token so we can use them later
                 mVerificationId = verificationId;
                 mResendToken = token;
-                Toast.makeText(AuthActivity.this, "Verification code sent", Toast.LENGTH_SHORT).show();
+
 
                 // ...
             }
