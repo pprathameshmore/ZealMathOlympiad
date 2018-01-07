@@ -110,6 +110,7 @@ public class AuthActivity extends AppCompatActivity {
                     String verificationCode = get_code.getText().toString();
                     PhoneAuthCredential phoneAuthCredential = PhoneAuthProvider.getCredential(verificationCode, mVerificationId);
                     signInWithPhoneAuthCredential(phoneAuthCredential);
+                    Toast.makeText(AuthActivity.this, "Verifying...", Toast.LENGTH_SHORT).show();
 
                 } else {
 
