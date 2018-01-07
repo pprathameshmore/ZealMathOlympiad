@@ -1,4 +1,4 @@
-# ZealMathOlympiad
+# Zeal Math Olympiad
 
 Official Zeal Math Olympiad Android App of Zeal College of Engineering and Research, Pune.
 
