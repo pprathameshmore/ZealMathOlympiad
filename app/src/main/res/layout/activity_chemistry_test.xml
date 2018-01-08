@@ -554,31 +554,35 @@
                         android:id="@+id/c11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <!-- ans =   -->
+                        <!-- ans =  2 -->
 
                         <RadioButton
                             android:id="@+id/c11_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="ethyl alcohol ether
+" />
 
                         <RadioButton
                             android:id="@+id/c11_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="HCl and water
+" />
 
                         <RadioButton
                             android:id="@+id/c11_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="phenol-water
+" />
 
                         <RadioButton
                             android:id="@+id/c11_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="chlorobenzene-bromobenzene
+" />
 
 
                     </RadioGroup>
@@ -604,30 +608,34 @@
                         android:id="@+id/c12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <!-- ans =   -->
+                        <!-- ans = 1  -->
                         <RadioButton
                             android:id="@+id/c12_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="– 100 x kJ/mol
+" />
 
                         <RadioButton
                             android:id="@+id/c12_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="– 50 x kJ/mol
+" />
 
                         <RadioButton
                             android:id="@+id/c12_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="+ 100 x kJ/mol
+" />
 
                         <RadioButton
                             android:id="@+id/c12_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="+50 x kJ/mol
+" />
 
 
                     </RadioGroup>
@@ -653,32 +661,32 @@
                         android:id="@+id/c13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <!-- ans =   -->
+                        <!-- ans =4   -->
 
 
                         <RadioButton
                             android:id="@+id/c13_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="3" />
 
                         <RadioButton
                             android:id="@+id/c13_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="7" />
 
                         <RadioButton
                             android:id="@+id/c13_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="8" />
 
                         <RadioButton
                             android:id="@+id/c13_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="9" />
 
                     </RadioGroup>
                 </LinearLayout>
@@ -703,31 +711,35 @@
                         android:id="@+id/c14"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <!-- ans =   -->
+                        <!-- ans = 4  -->
 
                         <RadioButton
                             android:id="@+id/c14_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="temperature
+" />
 
                         <RadioButton
                             android:id="@+id/c14_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="surface tension
+                        " />
 
                         <RadioButton
                             android:id="@+id/c14_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="viscosity
+" />
 
                         <RadioButton
                             android:id="@+id/c14_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="all of these
+" />
 
 
                     </RadioGroup>
@@ -753,31 +765,35 @@
                         android:id="@+id/c15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <!-- ans =   -->
+                        <!-- ans = 3  -->
 
                         <RadioButton
                             android:id="@+id/c15_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="increase in both i.e. number of ions and ionic mobility of ions.
+" />
 
                         <RadioButton
                             android:id="@+id/c15_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="increase in number of ions
+" />
 
                         <RadioButton
                             android:id="@+id/c15_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="increase in ionic mobility of ions
+" />
 
                         <RadioButton
                             android:id="@+id/c15_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="100% ionization of electrolyte at normal dilution
+" />
 
 
                     </RadioGroup>
@@ -803,31 +819,35 @@
                         android:id="@+id/c16"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <!-- ans =   -->
+                        <!-- ans =1   -->
 
                         <RadioButton
                             android:id="@+id/c16_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="2.5 V
+" />
 
                         <RadioButton
                             android:id="@+id/c16_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="5.0 V
+" />
 
                         <RadioButton
                             android:id="@+id/c16_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="4.5 V
+" />
 
                         <RadioButton
                             android:id="@+id/c16_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="3.0 V
+" />
 
 
                     </RadioGroup>
@@ -853,31 +873,35 @@
                         android:id="@+id/c17"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <!-- ans =   -->
+                        <!-- ans = 3  -->
 
                         <RadioButton
                             android:id="@+id/c17_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="0.1 M acetic acid
+" />
 
                         <RadioButton
                             android:id="@+id/c17_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="0.1 M chloroacetic acid
+" />
 
                         <RadioButton
                             android:id="@+id/c17_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="0.1 M fluoroacetic acid
+" />
 
                         <RadioButton
                             android:id="@+id/c17_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="0.1 M difluoroacetic acid
+" />
 
 
                     </RadioGroup>
@@ -903,31 +927,35 @@
                         android:id="@+id/c18"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <!-- ans =   -->
+                        <!-- ans = 1  -->
 
                         <RadioButton
                             android:id="@+id/c18_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="chemical reaction
+" />
 
                         <RadioButton
                             android:id="@+id/c18_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text=" physical reaction
+" />
 
                         <RadioButton
                             android:id="@+id/c18_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="no reaction
+" />
 
                         <RadioButton
                             android:id="@+id/c18_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="none of above
+" />
 
 
                     </RadioGroup>
@@ -953,31 +981,35 @@
                         android:id="@+id/c19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <!-- ans =   -->
+                        <!-- ans = 3  -->
 
                         <RadioButton
                             android:id="@+id/c19_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="ak
+" />
 
                         <RadioButton
                             android:id="@+id/c19_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="a/k
+" />
 
                         <RadioButton
                             android:id="@+id/c19_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="a/2k
+" />
 
                         <RadioButton
                             android:id="@+id/c19_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="2k/a
+" />
 
 
                     </RadioGroup>
@@ -1003,31 +1035,31 @@
                         android:id="@+id/c20"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <!-- ans =   -->
+                        <!-- ans = 4  -->
 
                         <RadioButton
                             android:id="@+id/c20_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="120" />
 
                         <RadioButton
                             android:id="@+id/c20_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="300" />
 
                         <RadioButton
                             android:id="@+id/c20_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="220" />
 
                         <RadioButton
                             android:id="@+id/c20_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text="20" />
 
 
                     </RadioGroup>
