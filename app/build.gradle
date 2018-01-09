@@ -34,8 +34,11 @@ dependencies {
     compile 'com.antonionicolaspina:revealtextview:2.0'
     compile 'com.github.medyo:android-about-page:1.2.2'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.ms-square:expandableTextView:0.1.4'
+
 
 }
+
 
 
 
