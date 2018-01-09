@@ -30,15 +30,26 @@ public class About extends AppCompatActivity {
                 .addPlayStore("com.ideashower.readitlater.pro")
                 .addGitHub("pprathameshmore","Prathamesh More")
                 .addGitHub("santosh62","Santosh Vijapure")
+                .addGroup("We are open source")
+                .addGitHub("pprathameshmore/ZealMathOlympiad","Fork this project on GitHub")
+
+                .addGroup("Wiki")
+                .addWebsite("https://github.com/pprathameshmore/ZealMathOlympiad/wiki","Know used technologies")
+
+
                 .addItem(createCopyright())
+
+
                 .create();
         setContentView(aboutPage);
     }
 
+
+
     private Element createCopyright() {
 
         Element copyright = new Element();
-        String copyRightString = String.format("Copyright %d by Prathamesh More, Santosh Vijapure", Calendar.getInstance().get(Calendar.YEAR));
+        String copyRightString = String.format("Copyright %d by Prathamesh More, Santosh Vijapure (MIT License)", Calendar.getInstance().get(Calendar.YEAR));
         copyright.setTitle(copyRightString);
         copyright.setGravity(Gravity.CENTER);
         return copyright;
