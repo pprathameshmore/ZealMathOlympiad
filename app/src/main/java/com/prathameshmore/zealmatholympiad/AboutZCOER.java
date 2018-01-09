@@ -21,6 +21,7 @@ public class AboutZCOER extends AppCompatActivity {
                 .setDescription("At ZCOER,  we believe that those who challenge the status quo today will do remarkable things tomorrow. If you’re passionate about the possibilities as we are – please contact us.")
                 .addGroup("Connect with us")
                 .addEmail("zcoer@zealeducation.com")
+                .addWebsite("www.zcoer.in")
                 .addFacebook("zealedusoc")
                 .addTwitter("zcoerpune")
                 .addYoutube("zealedusoc")
