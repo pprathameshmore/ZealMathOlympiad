@@ -103,4 +103,44 @@ Zeal Education Society Engineering and Educational Research (ZEAL’s), Pune , I
     <string name="p8"> </string>
 
 
+
+
+    <!-- chemistry  MCQs -->
+    <string name="c1">The three dimensional graph of lattice points which sets the pattern for the whole lattice is called</string>
+    <string name="c2">The edge of unit cell of fcc Xe crystal is 620 pm. The radius of Xe atom is
+</string>
+    <string name="c3">Diamonds are hard and</string>
+    <string name="c4">The number of octahedral void(s) per atom present in a cubic close-packed structure is</string>
+    <string name="c5">Giant ionic structures is also name given to
+</string>
+    <string name="c6">A metal crystallizes with a face-centered cubic lattice. The edge of the unit cell is 408 pm. The diameter of the metal atom is</string>
+    <string name="c7">KCl crystallises in the same type of lattice as does NaCl Given that  and  Calculate the ratio fo the side of the uint cell for KCl to that of NaCl.</string>
+    <string name="c8">Molarity of pure water is
+</string>
+    <string name="c9">"The freezing mixture used in ice cream machine consists of ice
+and</string>
+    <string name="c10">An aqueous solution of methanol in water has vapour pressure
+</string>
+    <string name="c11">Which of the following mixtures of liquids show negative deviation
+</string>
+    <string name="c12">The amount of the heat released when 20 ml 0.5 M NaOH is mixed with 100 ml 0.1 M HCl is x kJ. The heat of neutralization is
+</string>
+    <string name="c13">The amount of heat evolved when 500 cm3 of 0.1 M HCl is mixed with 200 cm3 of 0.2 M NaOH is ______.
+</string>
+    <string name="c14">Which of the following is an intensive property?
+</string>
+    <string name="c15">An increase in equivalent conductance of a strong electrolyte with dilution is mainly due to
+</string>
+    <string name="c16">"The Gibbs energy for the decomposition of Al2O3 at 500C is as follows:
+</string>
+    <string name="c17">The highest electrical conductivity of the following aqueous solutions is of
+</string>
+    <string name="c18">An electrolytic cell uses electrical energy to drive
+</string>
+    <string name="c19">Time required for 100 percent completion of a zero order reaction is
+</string>
+    <string name="c20">The energies of activation for forward and reverse reactions for A2 + B2   2AB are 180 kJ mol–1 and 200 kJ mol–1 respectively. The presence of a catalyst lowers the activation energy of both (forward and reverse) reactions by 100 kJ mol–1. The enthalpy change of the reaction (A2 + B2 → 2AB) in the presence of catalyst will be (in kJ mol–1):
+</string>
+
+
 </resources>
