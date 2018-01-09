@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle toggle;
     private NavigationView _navigation_view;
+    private FirebaseDatabase firebaseDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +70,12 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.news_menu:
                         Intent startNewsUpdatesActivity = new Intent(MainActivity.this, Events.class);
                         startActivity(startNewsUpdatesActivity);
+                        mDrawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.updates_menu:
+                        Intent startUpdatesActivity = new Intent(MainActivity.this,NewsUpdates.class);
+                        startActivity(startUpdatesActivity);
                         mDrawerLayout.closeDrawers();
                         break;
 
