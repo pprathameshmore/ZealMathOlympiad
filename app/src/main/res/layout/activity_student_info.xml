@@ -254,7 +254,7 @@
                                     android:id="@+id/radioButtonEngineering"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:text="BE" />
+                                    android:text="Engineering" />
 
                                 <RadioButton
                                     android:id="@+id/radioButtonMedical"
@@ -273,6 +273,13 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="BCA" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonPharmacy"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pharmacy" />
 
                             </RadioGroup>
 
