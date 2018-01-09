@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     case R.id.news_menu:
-                        Intent startNewsUpdatesActivity = new Intent(MainActivity.this, NewsUpdates.class);
+                        Intent startNewsUpdatesActivity = new Intent(MainActivity.this, Events.class);
                         startActivity(startNewsUpdatesActivity);
                         mDrawerLayout.closeDrawers();
                         break;
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.feedback_menu:
-                        Intent startFeedbackActivity = new Intent(MainActivity.this,Feedback.class);
+                        Intent startFeedbackActivity = new Intent(MainActivity.this, Feedback.class);
                         startActivity(startFeedbackActivity);
                         mDrawerLayout.closeDrawers();
                 }
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
+/*
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
             finish();
 
         }
-    }
+    } */
 
 
 }
