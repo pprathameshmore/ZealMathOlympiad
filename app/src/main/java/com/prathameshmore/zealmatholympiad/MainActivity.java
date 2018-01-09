@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.updates_menu:
-                        Intent startUpdatesActivity = new Intent(MainActivity.this,NewsUpdates.class);
+                        Intent startUpdatesActivity = new Intent(MainActivity.this, NewsUpdates.class);
                         startActivity(startUpdatesActivity);
                         mDrawerLayout.closeDrawers();
                         break;
@@ -100,7 +100,13 @@ public class MainActivity extends AppCompatActivity {
 
 
                     case R.id.share_menu:
-                        Toast.makeText(MainActivity.this, "This Page under development", Toast.LENGTH_SHORT).show();
+
+                        Intent sendIntent = new Intent();
+                        sendIntent.setAction(Intent.ACTION_SEND);
+                        sendIntent.putExtra(Intent.EXTRA_TEXT, "Download Zeal Math Olympiad Android app : ");
+                        sendIntent.setType("text/plain");
+                        startActivity(sendIntent);
+
                         mDrawerLayout.closeDrawers();
                         break;
 
