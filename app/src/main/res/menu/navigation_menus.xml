@@ -29,10 +29,16 @@
 
     <item
         android:id="@+id/news_menu"
-        android:icon="@mipmap/ic_forum_black_24dp"
-        android:title="Events &amp; Updates">
+        android:icon="@mipmap/ic_event_black_24dp"
+        android:title="Events at ZCOER">
 
     </item>
+
+
+    <item
+        android:id="@+id/updates_menu"
+        android:icon="@mipmap/ic_fiber_new_black_24dp"
+        android:title="Updates" />
 
 
     <item
@@ -55,8 +61,7 @@
     <item
         android:id="@+id/feedback_menu"
         android:icon="@mipmap/ic_message_black_24dp"
-        android:title="Feedback"
-        >
+        android:title="Feedback">
 
     </item>
 
