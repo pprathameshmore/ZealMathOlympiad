@@ -27,7 +27,8 @@
         <activity android:name=".ChemistryTest" />
         <activity android:name=".Feedback" />
         <activity android:name=".Videos" />
-        <activity android:name=".Events"></activity>
+        <activity android:name=".Events" />
+        <activity android:name=".MathsMaterial"></activity>
     </application>
 
 </manifest>
