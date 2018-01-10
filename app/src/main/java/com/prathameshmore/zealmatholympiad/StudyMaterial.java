@@ -26,8 +26,8 @@ public class StudyMaterial extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent startMathsMCQ = new Intent(StudyMaterial.this, MathTest.class);
-                startActivity(startMathsMCQ);
+                Intent startMathsMaterial = new Intent(StudyMaterial.this, MathsMaterial.class);
+                startActivity(startMathsMaterial);
 
             }
 
