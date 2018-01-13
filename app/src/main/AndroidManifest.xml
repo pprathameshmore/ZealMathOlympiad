@@ -28,7 +28,8 @@
         <activity android:name=".Feedback" />
         <activity android:name=".Videos" />
         <activity android:name=".Events" />
-        <activity android:name=".MathsMaterial"></activity>
+        <activity android:name=".MathsMaterial" />
+        <activity android:name=".PractiseMathTest"></activity>
     </application>
 
 </manifest>
