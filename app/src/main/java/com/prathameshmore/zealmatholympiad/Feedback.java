@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import com.squareup.picasso.Picasso;
 
 public class Feedback extends AppCompatActivity {
 
@@ -35,11 +34,11 @@ public class Feedback extends AppCompatActivity {
                 String det = editTextBody.getText().toString();
 
                 Intent email = new Intent(Intent.ACTION_SEND);
-                email.putExtra(Intent.EXTRA_EMAIL, new String[]{ "zcoer@zealeducation.com"});
+                email.putExtra(Intent.EXTRA_EMAIL, new String[]{"zcoer@zealeducation.com"});
                 email.putExtra(Intent.EXTRA_SUBJECT, sub);
                 email.putExtra(Intent.EXTRA_TEXT, det);
 
-//need this to prompts email client only
+                //need this to prompts email client only
                 email.setType("message/rfc822");
 
                 startActivity(Intent.createChooser(email, "Choose an Email client :"));

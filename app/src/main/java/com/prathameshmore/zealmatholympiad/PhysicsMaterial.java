@@ -19,11 +19,10 @@ public class PhysicsMaterial extends AppCompatActivity {
         textViewPhysicsPDF = (TextView) findViewById(R.id.pdf_physics);
 
 
-
         textViewPhysicsPDF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startPhysicsPDFActivity = new Intent(PhysicsMaterial.this,PhysicsPDF.class);
+                Intent startPhysicsPDFActivity = new Intent(PhysicsMaterial.this, PhysicsPDF.class);
                 startActivity(startPhysicsPDFActivity);
             }
         });
