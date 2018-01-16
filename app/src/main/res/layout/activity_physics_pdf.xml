@@ -4,15 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.prathameshmore.zealmatholympiad.PractiseMathTest">
+    tools:context="com.prathameshmore.zealmatholympiad.PhysicsPDF">
 
 
-    <WebView
-        android:id="@+id/practiseMathTest"
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/physicsPDF"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-    </WebView>
+        android:layout_height="match_parent"></com.github.barteksc.pdfviewer.PDFView>
 
 </RelativeLayout>
