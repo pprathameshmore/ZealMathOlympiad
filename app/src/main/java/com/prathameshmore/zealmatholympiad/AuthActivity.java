@@ -157,7 +157,7 @@ public class AuthActivity extends AppCompatActivity {
             @Override
             public void onVerificationFailed(FirebaseException e) {
 
-                Toast.makeText(AuthActivity.this, "Error while registration", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AuthActivity.this, "Sorry, We have in trouble", Toast.LENGTH_SHORT).show();
 
             }
 
