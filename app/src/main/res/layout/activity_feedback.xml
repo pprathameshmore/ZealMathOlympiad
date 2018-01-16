@@ -56,11 +56,12 @@
                     <EditText
                         android:id="@+id/edittext_feedback"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_height="fill_parent"
                         android:hint="Your Feedback"
-                        android:inputType="text"
-                        android:lines="100"
-                        android:maxLines="100" />
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:scrollbars="vertical"
+                        />
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
