@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.prathameshmore.zealmatholympiad.PhysicsMaterial">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,7 +25,7 @@
                 app:cardCornerRadius="@dimen/corner_radius">
 
                 <TextView
-                    android:id="@+id/pdfPhysics"
+                    android:id="@+id/pdf_physics"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
