@@ -35,6 +35,7 @@ public class About extends AppCompatActivity {
 
                 .addGroup("Wiki")
                 .addWebsite("https://github.com/pprathameshmore/ZealMathOlympiad/wiki","Know used technologies")
+                .addWebsite("https://github.com/pprathameshmore/ZealMathOlympiad/blob/master/LICENSE","License")
 
 
                 .addItem(createCopyright())
