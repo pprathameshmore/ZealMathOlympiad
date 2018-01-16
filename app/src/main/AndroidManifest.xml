@@ -33,11 +33,11 @@
         <activity android:name=".MathsMaterial" />
         <activity android:name=".PractiseMathTest" />
         <activity android:name=".MathsPDF" />
-        <activity android:name=".PhysicsMaterial" />
         <activity android:name=".PhysicsPDF" />
         <activity android:name=".PractisePhysicsTest" />
         <activity android:name=".ChemistryMaterial" />
-        <activity android:name=".ChemistryPDF"></activity>
+        <activity android:name=".ChemistryPDF" />
+        <activity android:name=".PhysicsMaterial"></activity>
     </application>
 
 </manifest>
