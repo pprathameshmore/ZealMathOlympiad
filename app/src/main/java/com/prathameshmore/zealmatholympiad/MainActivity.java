@@ -60,13 +60,6 @@ public class MainActivity extends AppCompatActivity {
                         mDrawerLayout.closeDrawers();
                         break;
 
-                    case R.id.video_menu:
-                        Intent startVideosActivity = new Intent(MainActivity.this, Videos.class);
-                        startActivity(startVideosActivity);
-                        mDrawerLayout.closeDrawers();
-                        break;
-
-
                     case R.id.news_menu:
                         Intent startNewsUpdatesActivity = new Intent(MainActivity.this, Events.class);
                         startActivity(startNewsUpdatesActivity);
@@ -136,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
+/*
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -151,5 +144,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+*/
 }

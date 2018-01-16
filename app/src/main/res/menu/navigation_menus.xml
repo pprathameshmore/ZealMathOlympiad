@@ -18,13 +18,6 @@
     </item>
 
 
-    <item
-        android:id="@+id/video_menu"
-        android:icon="@mipmap/ic_movie_creation_black_24dp"
-        android:title="@string/videos">
-
-
-    </item>
 
 
     <item
