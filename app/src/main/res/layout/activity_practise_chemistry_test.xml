@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.prathameshmore.zealmatholympiad.PractisePhysicsTest">
+    tools:context="com.prathameshmore.zealmatholympiad.PractiseChemistryTest">
+
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <WebView
-            android:id="@+id/practisePhysicsTest"
+            android:id="@+id/practiseChemistryTest"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp">

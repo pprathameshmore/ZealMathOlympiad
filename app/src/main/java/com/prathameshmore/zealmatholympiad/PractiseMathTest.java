@@ -9,21 +9,20 @@ import android.webkit.WebViewClient;
 public class PractiseMathTest extends AppCompatActivity {
 
 
-    private WebView praticseMathTest;
+    private WebView practiseMathTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practise_math_test);
 
-        praticseMathTest = (WebView) findViewById(R.id.practiseMathTest);
+        practiseMathTest = (WebView) findViewById(R.id.practiseMathTest);
 
 
-        WebSettings webSettings = praticseMathTest.getSettings();
-
+        WebSettings webSettings = practiseMathTest.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        praticseMathTest.loadUrl("http://114.143.280.199/secomp/");
-        praticseMathTest.setWebViewClient(new WebViewClient());
+        practiseMathTest.loadUrl("http://114.143.208.199/secomp/public/code/index.php");
+        practiseMathTest.setWebViewClient(new WebViewClient());
 
 
     }

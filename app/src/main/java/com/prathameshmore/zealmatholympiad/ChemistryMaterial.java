@@ -34,7 +34,7 @@ public class ChemistryMaterial extends AppCompatActivity {
         textViewChemistryPractiseTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startChemistryPractiseTestActivity = new Intent(ChemistryMaterial.this,ChemistryTest.class);
+                Intent startChemistryPractiseTestActivity = new Intent(ChemistryMaterial.this, PractiseChemistryTest.class);
                 startActivity(startChemistryPractiseTestActivity);
 
             }

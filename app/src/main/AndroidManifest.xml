@@ -37,7 +37,8 @@
         <activity android:name=".PractisePhysicsTest" />
         <activity android:name=".ChemistryMaterial" />
         <activity android:name=".ChemistryPDF" />
-        <activity android:name=".PhysicsMaterial"></activity>
+        <activity android:name=".PhysicsMaterial" />
+        <activity android:name=".PractiseChemistryTest"></activity>
     </application>
 
 </manifest>

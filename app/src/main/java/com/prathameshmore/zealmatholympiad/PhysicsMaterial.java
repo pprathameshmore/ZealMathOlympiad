@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class PhysicsMaterial extends AppCompatActivity {
 
     private TextView textViewPhysicsPDF;
+    private TextView textViewpractisePhysicsTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,13 +18,24 @@ public class PhysicsMaterial extends AppCompatActivity {
         setContentView(R.layout.activity_physics_material);
 
         textViewPhysicsPDF = (TextView) findViewById(R.id.pdf_physics);
-
+        textViewpractisePhysicsTest = (TextView) findViewById(R.id.practisePhysicsTest);
 
         textViewPhysicsPDF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startPhysicsPDFActivity = new Intent(PhysicsMaterial.this, PhysicsPDF.class);
                 startActivity(startPhysicsPDFActivity);
+            }
+        });
+
+        textViewpractisePhysicsTest.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent startPhysicsPractiseTestActivity = new Intent(PhysicsMaterial.this,PractisePhysicsTest.class);
+                startActivity(startPhysicsPractiseTestActivity);
+
             }
         });
 
