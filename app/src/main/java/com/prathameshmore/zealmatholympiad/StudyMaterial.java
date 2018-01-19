@@ -29,7 +29,7 @@ public class StudyMaterial extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent startMathsMaterial = new Intent(StudyMaterial.this, MathsMaterial.class);
+                Intent startMathsMaterial = new Intent(StudyMaterial.this, MathsPDF.class);
                 startActivity(startMathsMaterial);
 
             }
@@ -41,7 +41,7 @@ public class StudyMaterial extends AppCompatActivity {
         physicsCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startPhysicsMaterial = new Intent(StudyMaterial.this,PhysicsMaterial.class);
+                Intent startPhysicsMaterial = new Intent(StudyMaterial.this,PhysicsPDF.class);
                 startActivity(startPhysicsMaterial);
             }
         });
@@ -50,7 +50,7 @@ public class StudyMaterial extends AppCompatActivity {
         chemistryCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent startChemistryMaterial = new Intent(StudyMaterial.this, ChemistryMaterial.class);
+                Intent startChemistryMaterial = new Intent(StudyMaterial.this, ChemistryPDF.class);
                 startActivity(startChemistryMaterial);
             }
         });
