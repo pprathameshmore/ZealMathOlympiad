@@ -21,7 +21,7 @@ public class PractisePhysicsTest extends AppCompatActivity {
 
         webSettings.setJavaScriptEnabled(true);
 
-        practisePhysicsTest.loadUrl("http://114.143.208.199/secomp/public/code/index.php");
+        practisePhysicsTest.loadUrl("http://114.143.208.199/zmo");
         practisePhysicsTest.setWebViewClient(new WebViewClient());
 
     }

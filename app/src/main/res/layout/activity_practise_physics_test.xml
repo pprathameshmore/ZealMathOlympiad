@@ -6,19 +6,14 @@
     android:layout_height="match_parent"
     tools:context="com.prathameshmore.zealmatholympiad.PractisePhysicsTest">
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <WebView
             android:id="@+id/practisePhysicsTest"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp">
+            >
 
         </WebView>
 
-
-    </android.support.v7.widget.CardView>
 
 </RelativeLayout>

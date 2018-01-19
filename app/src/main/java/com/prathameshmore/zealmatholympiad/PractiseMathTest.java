@@ -21,7 +21,7 @@ public class PractiseMathTest extends AppCompatActivity {
 
         WebSettings webSettings = practiseMathTest.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        practiseMathTest.loadUrl("http://114.143.208.199/secomp/public/code/index.php");
+        practiseMathTest.loadUrl("http://114.143.208.199/zmo");
         practiseMathTest.setWebViewClient(new WebViewClient());
 
 

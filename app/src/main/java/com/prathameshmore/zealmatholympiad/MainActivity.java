@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-/*
+
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -144,5 +144,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-*/
+
 }

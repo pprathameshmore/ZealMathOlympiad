@@ -19,7 +19,7 @@ public class PractiseChemistryTest extends AppCompatActivity {
 
         WebSettings webSettings = practiceChemistryTest.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        practiceChemistryTest.loadUrl("http://114.143.208.199/secomp/public/code/index.php");
+        practiceChemistryTest.loadUrl("http://114.143.208.199/zmo");
         practiceChemistryTest.setWebViewClient(new WebViewClient());
 
 
