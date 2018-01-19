@@ -11,14 +11,18 @@
 
     <item
         android:id="@+id/tests_menu"
-        android:icon="@mipmap/ic_content_paste_black_24dp"
+        android:icon="@mipmap/ic_receipt_black_24dp"
         android:title="@string/study_menu">
 
 
     </item>
 
-
-
+    <item
+        android:id="@+id/take_test_menu"
+        android:icon="@mipmap/ic_content_paste_black_24dp"
+        android:title="Take a Test">
+        
+    </item>
 
     <item
         android:id="@+id/news_menu"
