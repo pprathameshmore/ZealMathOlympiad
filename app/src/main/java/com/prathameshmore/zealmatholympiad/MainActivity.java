@@ -99,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
                         sendIntent.putExtra(Intent.EXTRA_TEXT, "Download Zeal Math Olympiad Android app : ");
                         sendIntent.setType("text/plain");
                         startActivity(sendIntent);
-
                         mDrawerLayout.closeDrawers();
                         break;
 
@@ -112,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.take_test_menu:
                         Intent startTakeTastActivity = new Intent(MainActivity.this,TakeTest.class);
                         startActivity(startTakeTastActivity);
+                        mDrawerLayout.closeDrawers();
                         break;
                 }
 
