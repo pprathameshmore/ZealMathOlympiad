@@ -1,6 +1,7 @@
 package com.prathameshmore.zealmatholympiad;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -9,11 +10,13 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 
 public class Videos extends AppCompatActivity {
 
     private WebView mWebView;
     private FloatingActionButton floatingActionButtonYouTubeBtn;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +25,26 @@ public class Videos extends AppCompatActivity {
 
         mWebView = (WebView) findViewById(R.id.web_view);
         floatingActionButtonYouTubeBtn = (FloatingActionButton) findViewById(R.id.fab);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
 
         WebSettings myWebSettings = mWebView.getSettings();
         myWebSettings.setJavaScriptEnabled(true);
         mWebView.loadUrl("https://www.youtube.com/channel/UCzfVyPDkyEEE4xkLrXYC86g");
 
-        mWebView.setWebViewClient(new WebViewClient());
+        mWebView.setWebViewClient(new WebViewClient() {
+
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                progressBar.setVisibility(View.VISIBLE);
+                progressBar.bringToFront();
+                super.onPageStarted(view, url, favicon);
+            }
+
+            public void onPageFinished(WebView view, String url) {
+                progressBar.setVisibility(View.GONE);
+                super.onPageFinished(view, url);
+            }
+        });
 
         floatingActionButtonYouTubeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
