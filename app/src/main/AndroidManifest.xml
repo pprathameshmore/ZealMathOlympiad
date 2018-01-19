@@ -30,15 +30,10 @@
         <activity android:name=".Feedback" />
         <activity android:name=".Videos" />
         <activity android:name=".Events" />
-        <activity android:name=".MathsMaterial" />
-        <activity android:name=".PractiseMathTest" />
         <activity android:name=".MathsPDF" />
         <activity android:name=".PhysicsPDF" />
-        <activity android:name=".PractisePhysicsTest" />
-        <activity android:name=".ChemistryMaterial" />
         <activity android:name=".ChemistryPDF" />
-        <activity android:name=".PhysicsMaterial" />
-        <activity android:name=".PractiseChemistryTest"></activity>
+        <activity android:name=".TakeTest"></activity>
     </application>
 
 </manifest>

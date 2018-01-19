@@ -107,6 +107,12 @@ public class MainActivity extends AppCompatActivity {
                         Intent startFeedbackActivity = new Intent(MainActivity.this, Feedback.class);
                         startActivity(startFeedbackActivity);
                         mDrawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.take_test_menu:
+                        Intent startTakeTastActivity = new Intent(MainActivity.this,TakeTest.class);
+                        startActivity(startTakeTastActivity);
+                        break;
                 }
 
 
@@ -129,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
+/*
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -143,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+    */
 
 
 }
