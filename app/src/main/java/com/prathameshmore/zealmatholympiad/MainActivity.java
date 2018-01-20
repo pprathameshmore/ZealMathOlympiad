@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         toggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
         _navigation_view = (NavigationView) findViewById(R.id.navigation_view);
 
-        Toast.makeText(this, "This app under development, some feature will not work properly", Toast.LENGTH_LONG).show();
 
         mDrawerLayout.addDrawerListener(toggle);
         toggle.syncState();
@@ -60,9 +59,9 @@ public class MainActivity extends AppCompatActivity {
                         mDrawerLayout.closeDrawers();
                         break;
 
-                    case R.id.news_menu:
-                        Intent startNewsUpdatesActivity = new Intent(MainActivity.this, Events.class);
-                        startActivity(startNewsUpdatesActivity);
+                    case R.id.scholarship_menu:
+                        Intent startScholarshipActivity = new Intent(MainActivity.this, Scholarship.class);
+                        startActivity(startScholarshipActivity);
                         mDrawerLayout.closeDrawers();
                         break;
 
@@ -109,8 +108,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.take_test_menu:
-                        Intent startTakeTastActivity = new Intent(MainActivity.this,TakeTest.class);
-                        startActivity(startTakeTastActivity);
+                        Intent startTakeTestActivity = new Intent(MainActivity.this,TakeTest.class);
+                        startActivity(startTakeTestActivity);
                         mDrawerLayout.closeDrawers();
                         break;
                 }
@@ -149,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-    */
 
 
+*/
 }
