@@ -33,7 +33,8 @@
         <activity android:name=".MathsPDF" />
         <activity android:name=".PhysicsPDF" />
         <activity android:name=".ChemistryPDF" />
-        <activity android:name=".TakeTest"></activity>
+        <activity android:name=".TakeTest" />
+        <activity android:name=".Scholarship" />
     </application>
 
 </manifest>
