@@ -6,18 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.prathameshmore.zealmatholympiad.AuthActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/card_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_margin="20px"
-            android:background="@drawable/ripple_effect"
-            app:cardCornerRadius="@dimen/corner_radius">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -97,20 +86,16 @@
 
                 </android.support.v7.widget.CardView>
 
+                <TextView
+                    android:id="@+id/about_zcoer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About ZCOER"
+                    android:textAlignment="center" />
+
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
-
-        <TextView
-            android:id="@+id/about_zcoer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/card_layout"
-            android:text="About ZCOER"
-            android:textAlignment="center" />
-
-    </ScrollView>
 
 
 </RelativeLayout>
