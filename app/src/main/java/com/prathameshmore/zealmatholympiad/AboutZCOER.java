@@ -17,7 +17,7 @@ public class AboutZCOER extends AppCompatActivity {
 
         View aboutZCOER = new AboutPage(this)
                 .isRTL(false)
-                .setDescription("To celebrate its 22nd Anniversary in Technical Educational, Zeal Maths Olympiad (ZMO) is an Mathematical Knowledge Test for 12th science students among the Maharashtra. Zeal Maths Olympiad is conducted by Zeal College of  Engineering and Research Pune since 2015. Zeal has taken the responsibility for searching and training the youth today for Engineering career prospect. In 2016-2017 Zeal was able to reach 32000 students from various villages and cities across the Maharashtra . Today Success stories are been shared by state and district level winners of Zeal Maths Olympiad 2017-18\n" +
+                .setDescription("To celebrate its 22nd Anniversary in Technical Educational, Zeal Maths Olympiad (ZMO) is an Mathematical Knowledge Test for 12th science students among the Maharashtra. Zeal Maths Olympiad is conducted by Zeal College of  Engineering and Research Pune since 2015. Zeal has taken the responsibility for searching and training the youth today for Engineering career prospect. In 2017-2018 Zeal was able to reach 32000 students from various villages and cities across the Maharashtra . Today Success stories are been shared by state and district level winners of Zeal Maths Olympiad 2017-18\n" +
                         "\n")
                 .addGroup("Connect with us")
                 .addEmail("zcoer@zealeducation.com")
