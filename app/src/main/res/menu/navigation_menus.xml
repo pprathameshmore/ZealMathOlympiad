@@ -25,9 +25,9 @@
     </item>
 
     <item
-        android:id="@+id/news_menu"
+        android:id="@+id/scholarship_menu"
         android:icon="@mipmap/ic_event_black_24dp"
-        android:title="Events at ZCOER">
+        android:title="Scholarship Info">
 
     </item>
 

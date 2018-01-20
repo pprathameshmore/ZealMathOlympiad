@@ -17,6 +17,7 @@ public class PhysicsPDF extends AppCompatActivity {
         pdfViewPhysics = (PDFView) findViewById(R.id.physicsPDF);
 
         pdfViewPhysics.fromAsset("physics.pdf").load();
+        //pdfViewPhysics.fromUri("").load();
 
 
     }
