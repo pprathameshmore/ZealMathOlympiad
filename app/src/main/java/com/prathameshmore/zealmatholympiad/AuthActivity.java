@@ -111,6 +111,8 @@ public class AuthActivity extends AppCompatActivity {
                     PhoneAuthCredential phoneAuthCredential = PhoneAuthProvider.getCredential(mVerificationId, verificationCode);
                     signInWithPhoneAuthCredential(phoneAuthCredential);
                     Toast.makeText(AuthActivity.this, "Verifying...", Toast.LENGTH_SHORT).show();
+                    Intent startStudentInfoActivity = new Intent(AuthActivity.this,StudentInfo.class);
+                    startActivity(startStudentInfoActivity);
 
                 } else {
 
