@@ -10,11 +10,18 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle toggle;
     private NavigationView _navigation_view;
-    private FirebaseDatabase firebaseDatabase;
+    private FirebaseDatabase firebaseDatabaseMainImageVIew;
+
+    private ImageView mainImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +44,27 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         toggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
         _navigation_view = (NavigationView) findViewById(R.id.navigation_view);
+
+        mainImageView = (ImageView) findViewById(R.id.main_image_view);
+
+        firebaseDatabaseMainImageVIew = FirebaseDatabase.getInstance();
+        final DatabaseReference databaseReference = firebaseDatabaseMainImageVIew.getReference("main_image");
+
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                String urlMainImage = dataSnapshot.getValue(String.class);
+                Picasso.with(MainActivity.this).load(urlMainImage).into(mainImageView);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Picasso.with(MainActivity.this).load(R.drawable.logo_wide).into(mainImageView);
+            }
+        });
+
 
 
         mDrawerLayout.addDrawerListener(toggle);
@@ -62,6 +92,12 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.scholarship_menu:
                         Intent startScholarshipActivity = new Intent(MainActivity.this, Scholarship.class);
                         startActivity(startScholarshipActivity);
+                        mDrawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.admission_menu:
+                        Intent startAdmissionActivity = new Intent(MainActivity.this,AdmissionInfo.class);
+                        startActivity(startAdmissionActivity);
                         mDrawerLayout.closeDrawers();
                         break;
 
@@ -134,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
+/*
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -148,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
+*/
 
 
 }
