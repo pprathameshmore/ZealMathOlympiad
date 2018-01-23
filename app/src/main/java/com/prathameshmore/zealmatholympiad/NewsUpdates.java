@@ -14,6 +14,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 
 import org.w3c.dom.Text;
@@ -27,14 +28,11 @@ public class NewsUpdates extends AppCompatActivity {
     private FirebaseDatabase message4;
     private FirebaseDatabase message5;
     private TextView message_textview_1;
-
     private TextView message_textview_2;
-
     private TextView message_textview_3;
-
     private TextView message_textview_4;
-
     private TextView message_textview_5;
+   // private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,10 +44,11 @@ public class NewsUpdates extends AppCompatActivity {
         message_textview_3 = (TextView) findViewById(R.id.firebase_textview_3);
         message_textview_4 = (TextView) findViewById(R.id.firebase_textview_4);
         message_textview_5 = (TextView) findViewById(R.id.firebase_textview_5);
+        //imageView = (ImageView) findViewById(R.id.image_view);
 
 
         message1 = FirebaseDatabase.getInstance();
-        final DatabaseReference message_1 = message1.getReference("message_1");
+        DatabaseReference message_1 = message1.getReference("message_1");
 
         message2 = FirebaseDatabase.getInstance();
         DatabaseReference message_2 = message2.getReference("message_2");
@@ -134,6 +133,7 @@ public class NewsUpdates extends AppCompatActivity {
                 String message_5 = dataSnapshot.getValue(String.class);
                 message_textview_5.setText(message_5);
 
+
             }
 
             @Override
@@ -141,6 +141,7 @@ public class NewsUpdates extends AppCompatActivity {
 
             }
         });
+
 
     }
 }

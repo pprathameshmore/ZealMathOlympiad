@@ -100,30 +100,6 @@ public class AuthActivity extends AppCompatActivity {
             }
         });
 
-        mVerifyBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-
-                if (get_code.getText().length() != 0) {
-
-                    String verificationCode = get_code.getText().toString();
-                    PhoneAuthCredential phoneAuthCredential = PhoneAuthProvider.getCredential(mVerificationId, verificationCode);
-                    signInWithPhoneAuthCredential(phoneAuthCredential);
-                    Toast.makeText(AuthActivity.this, "Verifying...", Toast.LENGTH_SHORT).show();
-                    Intent startStudentInfoActivity = new Intent(AuthActivity.this,StudentInfo.class);
-                    startActivity(startStudentInfoActivity);
-
-                } else {
-
-                    get_code.setError("Enter verification code");
-
-
-                }
-
-
-            }
-        });
 
         //Navigate to About Page
 
@@ -160,11 +136,11 @@ public class AuthActivity extends AppCompatActivity {
             public void onVerificationFailed(FirebaseException e) {
 
                 Toast.makeText(AuthActivity.this, "Sorry, We have in trouble", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AuthActivity.this, "Check your internet connection", Toast.LENGTH_LONG).show();
 
             }
 
-            public void onCodeSent(String verificationId,
-                                   PhoneAuthProvider.ForceResendingToken token) {
+            public void onCodeSent(String verificationId, PhoneAuthProvider.ForceResendingToken token) {
 
 
                 btnType = 1;
@@ -187,7 +163,7 @@ public class AuthActivity extends AppCompatActivity {
     }
 
 
-    private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
+    private void signInWithPhoneAuthCredential(final PhoneAuthCredential credential) {
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -212,6 +188,34 @@ public class AuthActivity extends AppCompatActivity {
                         }
                     }
                 });
+
+
+        mVerifyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                if (get_code.getText().length() != 0) {
+
+                    String verificationCode = get_code.getText().toString();
+                    PhoneAuthCredential credential1 = PhoneAuthProvider.getCredential(mVerificationId, verificationCode);
+                    signInWithPhoneAuthCredential(credential1);
+
+                    Toast.makeText(AuthActivity.this, "Verifying...", Toast.LENGTH_SHORT).show();
+
+
+                } else {
+
+                    get_code.setError("Enter verification code");
+
+
+                }
+
+
+            }
+        });
+
     }
+
 
 }
