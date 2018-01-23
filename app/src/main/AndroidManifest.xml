@@ -25,8 +25,6 @@
         <activity android:name=".AboutZCOER" />
         <activity android:name=".MathTest" />
         <activity android:name=".About" />
-        <activity android:name=".PhysicsTest" />
-        <activity android:name=".ChemistryTest" />
         <activity android:name=".Feedback" />
         <activity android:name=".Videos" />
         <activity android:name=".Events" />
@@ -35,6 +33,7 @@
         <activity android:name=".ChemistryPDF" />
         <activity android:name=".TakeTest" />
         <activity android:name=".Scholarship" />
+        <activity android:name=".AdmissionInfo"></activity>
     </application>
 
 </manifest>
