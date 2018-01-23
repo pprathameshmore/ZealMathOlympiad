@@ -40,6 +40,7 @@ dependencies {
     compile 'com.github.medyo:android-about-page:1.2.2'
     compile 'com.github.barteksc:android-pdf-viewer:2.8.2'
     compile 'com.ms-square:expandableTextView:0.1.4'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 
 }
 
