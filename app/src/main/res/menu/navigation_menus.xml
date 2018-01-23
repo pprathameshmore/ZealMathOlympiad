@@ -21,8 +21,13 @@
         android:id="@+id/take_test_menu"
         android:icon="@mipmap/ic_content_paste_black_24dp"
         android:title="Take a Test">
-        
+
     </item>
+    <item
+        android:id="@+id/updates_menu"
+        android:icon="@mipmap/ic_fiber_new_black_24dp"
+        android:title="Updates" />
+
 
     <item
         android:id="@+id/scholarship_menu"
@@ -33,16 +38,15 @@
 
 
     <item
-        android:id="@+id/updates_menu"
-        android:icon="@mipmap/ic_fiber_new_black_24dp"
-        android:title="Updates" />
+        android:id="@+id/admission_menu"
+        android:icon="@mipmap/ic_new_releases_black_24dp"
+        android:title="Admission Info" />
 
 
     <item
         android:id="@+id/zeal_clg_menu"
         android:icon="@mipmap/ic_school_black_24dp"
         android:title="@string/zeal_clg">
-
 
     </item>
 
