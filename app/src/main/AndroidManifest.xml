@@ -27,7 +27,6 @@
         <activity android:name=".About" />
         <activity android:name=".Feedback" />
         <activity android:name=".Videos" />
-        <activity android:name=".Events" />
         <activity android:name=".MathsPDF" />
         <activity android:name=".PhysicsPDF" />
         <activity android:name=".ChemistryPDF" />
