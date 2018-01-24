@@ -31,7 +31,7 @@
                     <ImageView
                         android:id="@+id/main_image_view"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_height="wrap_content"
                         android:src="@drawable/logo_wide" />
 
                 </android.support.v7.widget.CardView>

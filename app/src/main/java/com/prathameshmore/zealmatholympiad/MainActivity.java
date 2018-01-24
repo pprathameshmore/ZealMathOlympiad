@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 String urlMainImage = dataSnapshot.getValue(String.class);
-                Picasso.with(MainActivity.this).load(urlMainImage).into(mainImageView);
+                Picasso.with(MainActivity.this).load(urlMainImage).placeholder(R.drawable.loading).into(mainImageView);
 
             }
 
@@ -169,8 +169,8 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 /*
+
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
