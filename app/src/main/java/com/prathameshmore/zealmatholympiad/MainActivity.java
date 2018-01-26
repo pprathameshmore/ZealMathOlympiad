@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-/*
+
 
     public void onStart() {
         super.onStart();
@@ -184,7 +184,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-*/
 
 
 }
