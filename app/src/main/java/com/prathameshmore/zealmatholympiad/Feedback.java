@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 
 public class Feedback extends AppCompatActivity {
@@ -30,18 +31,24 @@ public class Feedback extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                String sub = editTextSubject.getText().toString();
-                String det = editTextBody.getText().toString();
+                if (editTextBody.length() == 0 && editTextSubject.length() == 0) {
 
-                Intent email = new Intent(Intent.ACTION_SEND);
-                email.putExtra(Intent.EXTRA_EMAIL, new String[]{"zcoer@zealeducation.com"});
-                email.putExtra(Intent.EXTRA_SUBJECT, sub);
-                email.putExtra(Intent.EXTRA_TEXT, det);
+                    Toast.makeText(Feedback.this, "Please fill the all information", Toast.LENGTH_SHORT).show();
 
-                //need this to prompts email client only
-                email.setType("message/rfc822");
+                } else {
+                    String sub = editTextSubject.getText().toString();
+                    String det = editTextBody.getText().toString();
 
-                startActivity(Intent.createChooser(email, "Choose an Email client :"));
+                    Intent email = new Intent(Intent.ACTION_SEND);
+                    email.putExtra(Intent.EXTRA_EMAIL, new String[]{"zcoer@zealeducation.com"});
+                    email.putExtra(Intent.EXTRA_SUBJECT, sub);
+                    email.putExtra(Intent.EXTRA_TEXT, det);
+
+                    //need this to prompts email client only
+                    email.setType("message/rfc822");
+
+                    startActivity(Intent.createChooser(email, "Choose an Email client :"));
+                }
 
             }
         });
