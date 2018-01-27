@@ -160,6 +160,32 @@ public class AuthActivity extends AppCompatActivity {
             }
         };
 
+        mVerifyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                if (get_code.getText().length() != 0) {
+
+                    Toast.makeText(AuthActivity.this, "Verifying...", Toast.LENGTH_SHORT).show();
+                    String verificationCode = get_code.getText().toString();
+                    PhoneAuthCredential credential1 = PhoneAuthProvider.getCredential(mVerificationId, verificationCode);
+                    signInWithPhoneAuthCredential(credential1);
+
+
+
+                } else {
+
+                    get_code.setError("Enter verification code");
+
+
+                }
+
+
+            }
+        });
+
+
     }
 
 
@@ -190,30 +216,6 @@ public class AuthActivity extends AppCompatActivity {
                 });
 
 
-        mVerifyBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-
-                if (get_code.getText().length() != 0) {
-
-                    String verificationCode = get_code.getText().toString();
-                    PhoneAuthCredential credential1 = PhoneAuthProvider.getCredential(mVerificationId, verificationCode);
-                    signInWithPhoneAuthCredential(credential1);
-
-                    Toast.makeText(AuthActivity.this, "Verifying...", Toast.LENGTH_SHORT).show();
-
-
-                } else {
-
-                    get_code.setError("Enter verification code");
-
-
-                }
-
-
-            }
-        });
 
     }
 
