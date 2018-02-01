@@ -66,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
         mDrawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -96,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.admission_menu:
-                        Intent startAdmissionActivity = new Intent(MainActivity.this,AdmissionInfo.class);
+                        Intent startAdmissionActivity = new Intent(MainActivity.this, AdmissionInfo.class);
                         startActivity(startAdmissionActivity);
                         mDrawerLayout.closeDrawers();
                         break;
@@ -144,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.take_test_menu:
-                        Intent startTakeTestActivity = new Intent(MainActivity.this,TakeTest.class);
+                        Intent startTakeTestActivity = new Intent(MainActivity.this, TakeTest.class);
                         startActivity(startTakeTestActivity);
                         mDrawerLayout.closeDrawers();
                         break;
@@ -169,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
+/*
 
     public void onStart() {
         super.onStart();
@@ -184,6 +183,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
+*/
 
 }
