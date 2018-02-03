@@ -27,12 +27,13 @@ public class About extends AppCompatActivity {
                 .addWebsite("http://www.about.me/prathameshmore")
                 .addFacebook("pprathameshmore","Prathamesh More")
                 .addFacebook("santoshkumar.vijapure","Santosh Vijapure")
-                .addPlayStore("com.ideashower.readitlater.pro")
+                .addPlayStore("com.prathameshmore.zealmatholympiad")
                 .addGitHub("pprathameshmore","Prathamesh More")
                 .addGitHub("santosh62","Santosh Vijapure")
+                .addGroup("Special Thanks")
+                .addItem(specialThanks())
                 .addGroup("We are open source")
                 .addGitHub("pprathameshmore/ZealMathOlympiad","Fork this project on GitHub")
-
                 .addGroup("Wiki")
                 .addWebsite("https://github.com/pprathameshmore/ZealMathOlympiad/wiki","Know used technologies")
                 .addWebsite("https://github.com/pprathameshmore/ZealMathOlympiad/blob/master/LICENSE","License")
@@ -45,6 +46,13 @@ public class About extends AppCompatActivity {
         setContentView(aboutPage);
     }
 
+    private Element specialThanks() {
+        Element thanks = new Element();
+        String string = "Lomte Sir and Vikas Patil Sir";
+        thanks.setTitle(string);
+        thanks.setGravity(Gravity.CENTER);
+        return thanks;
+    }
 
 
     private Element createCopyright() {
