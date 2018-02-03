@@ -7,9 +7,9 @@
     tools:context="com.prathameshmore.zealmatholympiad.PhysicsPDF">
 
 
-    <com.github.barteksc.pdfviewer.PDFView
+    <com.joanzapata.pdfview.PDFView
         android:id="@+id/physicsPDF"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></com.github.barteksc.pdfviewer.PDFView>
+        android:layout_height="match_parent" />
 
 </RelativeLayout>

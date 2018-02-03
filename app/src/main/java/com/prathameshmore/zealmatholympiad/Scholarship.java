@@ -3,20 +3,18 @@ package com.prathameshmore.zealmatholympiad;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.github.barteksc.pdfviewer.PDFView;
-
 public class Scholarship extends AppCompatActivity {
 
-    private PDFView pdfViewScholarship;
+    private com.joanzapata.pdfview.PDFView pdfViewScholarship;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scholarship);
 
-        pdfViewScholarship = (PDFView) findViewById(R.id.pdf);
+        pdfViewScholarship = (com.joanzapata.pdfview.PDFView) findViewById(R.id.pdf);
 
-        pdfViewScholarship.fromAsset("ScholarshipInfo.pdf").load();
+        pdfViewScholarship.fromAsset("ScholarshipInfo.pdf").enableSwipe(true).load();
 
     }
 }

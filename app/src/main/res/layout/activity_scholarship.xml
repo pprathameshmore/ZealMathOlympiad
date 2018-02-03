@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.prathameshmore.zealmatholympiad.Scholarship">
 
-    <com.github.barteksc.pdfviewer.PDFView
+    <com.joanzapata.pdfview.PDFView
         android:id="@+id/pdf"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></com.github.barteksc.pdfviewer.PDFView>
+        android:layout_height="match_parent"></com.joanzapata.pdfview.PDFView>
 
 </RelativeLayout>
