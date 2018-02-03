@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "1022957793720-9t5vfahgptdrrras23ai9o04mvdn61js.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prathameshmore.zealmatholympiad",
+            "certificate_hash": "5a0b390edf9aff3a953d0253e897939ccca240ed"
+          }
+        },
+        {
+          "client_id": "1022957793720-1k77qo8pulkr80h8q0mvidmdcpk9csll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prathameshmore.zealmatholympiad",
+            "certificate_hash": "af15e0a35b4cc83c645f1c5f0730934fd5f5f547"
+          }
+        },
+        {
           "client_id": "1022957793720-6ddct0b9fpqhv7mnggqfu95j6123qpk3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
