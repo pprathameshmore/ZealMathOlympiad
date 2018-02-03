@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
 
                         Intent sendIntent = new Intent();
                         sendIntent.setAction(Intent.ACTION_SEND);
-                        sendIntent.putExtra(Intent.EXTRA_TEXT, "Download Zeal Math Olympiad Android app : ");
+                        sendIntent.putExtra(Intent.EXTRA_TEXT, "Download Zeal Math Olympiad Android app : https://play.google.com/store/apps/details?id=com.prathameshmore.zealmatholympiad");
                         sendIntent.setType("text/plain");
                         startActivity(sendIntent);
                         mDrawerLayout.closeDrawers();
@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-/*
+
 
     public void onStart() {
         super.onStart();
@@ -183,6 +183,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-*/
+
 
 }
