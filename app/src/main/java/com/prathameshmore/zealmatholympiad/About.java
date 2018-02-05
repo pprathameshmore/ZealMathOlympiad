@@ -20,7 +20,7 @@ public class About extends AppCompatActivity {
         View aboutPage = new AboutPage(this)
                 .isRTL(false)
                 .setImage(R.drawable.app_logo)
-                .setDescription("ZEAL MATH OLYMPIAD Version 1.0")
+                .setDescription("ZEAL MATH OLYMPIAD Version 2.0")
                 .addGroup("Connect with Developers")
                 .addEmail("moreprathameshmore@hotmail.com","Prathamesh More")
                 .addEmail("vijapuresantosh@gmail.com","Santosh Vijapure")
