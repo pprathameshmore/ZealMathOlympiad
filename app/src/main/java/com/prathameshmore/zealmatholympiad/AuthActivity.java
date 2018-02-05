@@ -199,10 +199,15 @@ public class AuthActivity extends AppCompatActivity {
 
 
                             FirebaseUser user = task.getResult().getUser();
-                            Intent startMainActivity = new Intent(AuthActivity.this, MainActivity.class);
-                            startActivity(startMainActivity);
+
+                            Intent startStudentInfoActivity = new Intent(AuthActivity.this, StudentInfo.class);
+                            startActivity(startStudentInfoActivity);
                             finish();
 
+                            /*Intent startMainActivity = new Intent(AuthActivity.this, MainActivity.class);
+                            startActivity(startMainActivity);
+                            finish();
+                            */
                             // ...
                         } else {
                             // Sign in failed, display a message and update the UI
