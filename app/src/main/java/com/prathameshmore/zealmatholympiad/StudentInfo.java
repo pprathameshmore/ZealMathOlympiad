@@ -1,5 +1,6 @@
 package com.prathameshmore.zealmatholympiad;
 
+import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.provider.MediaStore;
@@ -36,6 +37,8 @@ public class StudentInfo extends AppCompatActivity {
     private RadioGroup radioGroupInterests;
     private RadioButton radioButton;
 
+    private android.support.v7.app.ActionBar actionBar;
+
     //private String interestItem;
 
     //private Spinner interestSpinner;
@@ -66,6 +69,10 @@ public class StudentInfo extends AppCompatActivity {
         radioButtonMedical = (RadioButton) findViewById(R.id.radioButtonMedical);
         radioButtonBSC = (RadioButton) findViewById(R.id.radioButtonBSc);
         radioButtonBSA = (RadioButton) findViewById(R.id.radioButtonBSA); */
+
+       actionBar = getSupportActionBar();
+       actionBar.setTitle("Registration Form");
+
 
         buttonSaveInfo.setOnClickListener(new View.OnClickListener() {
             @Override

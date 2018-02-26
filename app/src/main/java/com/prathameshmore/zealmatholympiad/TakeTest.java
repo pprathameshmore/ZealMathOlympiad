@@ -1,8 +1,10 @@
 package com.prathameshmore.zealmatholympiad;
 
+import android.app.ActionBar;
 import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -14,11 +16,17 @@ public class TakeTest extends AppCompatActivity {
 
     private WebView takeTest;
     private ProgressBar progressBar;
+    private android.support.v7.app.ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_take_test);
+
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Take a test");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
 
         takeTest = (WebView) findViewById(R.id.web_view);
 
@@ -42,5 +50,16 @@ public class TakeTest extends AppCompatActivity {
 
 
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

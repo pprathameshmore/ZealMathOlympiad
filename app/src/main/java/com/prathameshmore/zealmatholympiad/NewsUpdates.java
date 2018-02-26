@@ -2,9 +2,11 @@ package com.prathameshmore.zealmatholympiad;
 
 import android.content.Context;
 import android.media.Image;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.CellIdentityGsm;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,6 +34,7 @@ public class NewsUpdates extends AppCompatActivity {
     private TextView message_textview_3;
     private TextView message_textview_4;
     private TextView message_textview_5;
+    private ActionBar actionBar;
    // private ImageView imageView;
 
     @Override
@@ -45,6 +48,10 @@ public class NewsUpdates extends AppCompatActivity {
         message_textview_4 = (TextView) findViewById(R.id.firebase_textview_4);
         message_textview_5 = (TextView) findViewById(R.id.firebase_textview_5);
         //imageView = (ImageView) findViewById(R.id.image_view);
+
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("News & Updates");
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
 
         message1 = FirebaseDatabase.getInstance();
@@ -143,5 +150,17 @@ public class NewsUpdates extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -1,8 +1,10 @@
 package com.prathameshmore.zealmatholympiad;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +17,7 @@ public class Feedback extends AppCompatActivity {
     private Button buttonSend;
     private EditText editTextSubject;
     private EditText editTextBody;
+    private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,10 @@ public class Feedback extends AppCompatActivity {
         buttonSend = (Button) findViewById(R.id.button_send);
         editTextSubject = (EditText) findViewById(R.id.edittext_subject);
         editTextBody = (EditText) findViewById(R.id.edittext_feedback);
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Feedback");
+
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
 
         buttonSend.setOnClickListener(new View.OnClickListener() {
@@ -54,4 +61,17 @@ public class Feedback extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }

@@ -1,9 +1,11 @@
 package com.prathameshmore.zealmatholympiad;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -13,6 +15,7 @@ public class StudyMaterial extends AppCompatActivity {
     private TextView physicsCardView;
     private CardView chemistryCardView;
     private CardView videosCardView;
+    private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,10 @@ public class StudyMaterial extends AppCompatActivity {
         physicsCardView = (TextView) findViewById(R.id.phy_card_view);
         chemistryCardView = (CardView) findViewById(R.id.chemistry_card_view);
         videosCardView = (CardView) findViewById(R.id.videos_card_view);
+
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Study Material");
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
 
         mathsCardView.setOnClickListener(new View.OnClickListener() {
@@ -41,7 +48,7 @@ public class StudyMaterial extends AppCompatActivity {
         physicsCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startPhysicsMaterial = new Intent(StudyMaterial.this,PhysicsPDF.class);
+                Intent startPhysicsMaterial = new Intent(StudyMaterial.this, PhysicsPDF.class);
                 startActivity(startPhysicsMaterial);
             }
         });
@@ -58,9 +65,22 @@ public class StudyMaterial extends AppCompatActivity {
         videosCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startVideosActivity = new Intent(StudyMaterial.this,Videos.class);
+                Intent startVideosActivity = new Intent(StudyMaterial.this, Videos.class);
                 startActivity(startVideosActivity);
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

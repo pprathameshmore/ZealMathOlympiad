@@ -23,7 +23,6 @@
         <activity android:name=".StudentInfo" />
         <activity android:name=".NewsUpdates" />
         <activity android:name=".AboutZCOER" />
-        <activity android:name=".MathTest" />
         <activity android:name=".About" />
         <activity android:name=".Feedback" />
         <activity android:name=".Videos" />

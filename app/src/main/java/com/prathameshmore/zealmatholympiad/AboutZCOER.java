@@ -1,7 +1,9 @@
 package com.prathameshmore.zealmatholympiad;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 
 import mehdi.sakout.aboutpage.AboutPage;
@@ -9,11 +11,17 @@ import mehdi.sakout.aboutpage.Element;
 
 public class AboutZCOER extends AppCompatActivity {
 
+    private ActionBar actionBar;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_zcoer);
 
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("About ZCOER");
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         View aboutZCOER = new AboutPage(this)
                 .isRTL(false)
@@ -39,5 +47,14 @@ public class AboutZCOER extends AppCompatActivity {
         setContentView(aboutZCOER);
 
 
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

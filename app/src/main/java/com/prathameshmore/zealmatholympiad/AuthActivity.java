@@ -1,5 +1,6 @@
 package com.prathameshmore.zealmatholympiad;
 
+import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -173,7 +174,6 @@ public class AuthActivity extends AppCompatActivity {
                     signInWithPhoneAuthCredential(credential1);
 
 
-
                 } else {
 
                     get_code.setError("Enter verification code");
@@ -219,7 +219,6 @@ public class AuthActivity extends AppCompatActivity {
                         }
                     }
                 });
-
 
 
     }
