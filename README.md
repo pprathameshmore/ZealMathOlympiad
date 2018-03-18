@@ -8,13 +8,9 @@ Donwload Link : https://play.google.com/store/apps/details?id=com.prathameshmore
 
 Features: 
 
-Registration for competition through the app.
-
-Provide study materials(PDFs).
-
-Videos tutorials.
-
-Practice tests for competition (Web Portal for tests).
-
-The user can receive important notification about competition.
+-Registration for competition through the app.
+-Provide study materials(PDFs).
+-Videos tutorials.
+-Practice tests for competition (Web Portal for tests).
+-The user can receive important notification about competition.
 
