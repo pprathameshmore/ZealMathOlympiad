@@ -15,8 +15,12 @@ Zeal Math Olympiad Competition (ZMO). ZMO is state level competition for HSC stu
 Features: 
 
 -Registration for competition through the app.
+
 -Provide study materials(PDFs).
+
 -Videos tutorials.
+
 -Practice tests for competition (Web Portal for tests).
+
 -The user can receive important notification about competition.
 
