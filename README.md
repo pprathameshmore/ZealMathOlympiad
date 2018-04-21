@@ -25,13 +25,10 @@ Videos tutorials.</li>
 
 <p>
 <h2><strong>Screenshots</strong></h2>
-<img src="https://s20.postimg.org/zfhjkyh2l/device-2018-04-06-180739.png">
-<img src="https://s20.postimg.org/4b7dhiz19/device-2018-04-06-183516.png">
-
-<img src="https://s20.postimg.org/ovc7g0u7x/device-2018-04-06-183543.png">
-
-<img src="https://s20.postimg.org/wo2v80fml/device-2018-04-06-183609.png">
-<img src="https://s20.postimg.org/s26qzprjh/device-2018-04-06-183645.png" />
-
-<img src="https://s20.postimg.org/6frqisg59/device-2018-04-06-183722.png" />
+<a href="https://ibb.co/n0Kyu7"><img src="https://preview.ibb.co/fSorE7/device_2018_04_06_180739.png" alt="device_2018_04_06_180739" border="0"></a>
+<a href="https://ibb.co/h1PEZ7"><img src="https://preview.ibb.co/fM6iSS/device_2018_04_06_183516.png" alt="device_2018_04_06_183516" border="0"></a>
+<a href="https://ibb.co/mRb6gn"><img src="https://preview.ibb.co/f7WuZ7/device_2018_04_06_183543.png" alt="device_2018_04_06_183543" border="0"></a>
+<a href="https://ibb.co/n116gn"><img src="https://preview.ibb.co/kTQXMn/device_2018_04_06_183609.png" alt="device_2018_04_06_183609" border="0"></a>
+<a href="https://ibb.co/gWruZ7"><img src="https://preview.ibb.co/f6yK1n/device_2018_04_06_183645.png" alt="device_2018_04_06_183645" border="0"></a>
+<a href="https://ibb.co/cTsCMn"><img src="https://preview.ibb.co/e0Tmgn/device_2018_04_06_183722.png" alt="device_2018_04_06_183722" border="0"></a>
 </p>
