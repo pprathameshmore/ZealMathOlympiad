@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@mipmap/ic_home_black_24dp"
+        android:title="@string/home">
+
+
+    </item>
+
+    <item
+        android:id="@+id/tests_menu"
+        android:icon="@mipmap/ic_receipt_black_24dp"
+        android:title="@string/study_menu">
+
+
+    </item>
+
+    <item
+        android:id="@+id/take_test_menu"
+        android:icon="@mipmap/ic_content_paste_black_24dp"
+        android:title="Take a Test">
+
+    </item>
+    <item
+        android:id="@+id/updates_menu"
+        android:icon="@mipmap/ic_fiber_new_black_24dp"
+        android:title="Updates" />
+
+
+    <item
+        android:id="@+id/scholarship_menu"
+        android:icon="@mipmap/ic_event_black_24dp"
+        android:title="Scholarship Info">
+
+    </item>
+
+
+    <item
+        android:id="@+id/admission_menu"
+        android:icon="@mipmap/ic_new_releases_black_24dp"
+        android:title="Admission Info" />
+
+
+    <item
+        android:id="@+id/zeal_clg_menu"
+        android:icon="@mipmap/ic_school_black_24dp"
+        android:title="@string/zeal_clg">
+
+    </item>
+
+    <item
+        android:id="@+id/about_menu"
+        android:icon="@mipmap/ic_info_black_24dp"
+        android:title="@string/about">
+
+
+    </item>
+
+
+    <item
+        android:id="@+id/feedback_menu"
+        android:icon="@mipmap/ic_message_black_24dp"
+        android:title="Feedback">
+
+    </item>
+
+
+    <item
+
+        android:id="@+id/log_out_menu"
+        android:icon="@mipmap/ic_cancel_black_24dp"
+        android:title="@string/log_out_menu"
+
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/share_menu"
+        android:icon="@mipmap/ic_share_black_24dp"
+        android:title="@string/share">
+
+    </item>
+
+
+</menu>
