@@ -5,11 +5,15 @@ import android.media.Image;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.telephony.CellIdentityGsm;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -24,7 +28,7 @@ import org.w3c.dom.Text;
 public class NewsUpdates extends AppCompatActivity {
 
 
-    private FirebaseDatabase message1;
+   /* private FirebaseDatabase message1;
     private FirebaseDatabase message2;
     private FirebaseDatabase message3;
     private FirebaseDatabase message4;
@@ -35,13 +39,24 @@ public class NewsUpdates extends AppCompatActivity {
     private TextView message_textview_4;
     private TextView message_textview_5;
     private ActionBar actionBar;
-   // private ImageView imageView;
+   // private ImageView imageView; */
+
+   private RecyclerView mEventList;
+   private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_updates);
 
+        mEventList = findViewById(R.id.event_list);
+        mEventList.setHasFixedSize(true);
+        mEventList.setLayoutManager(new LinearLayoutManager(this));
+
+
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Events");
+
+/*
         message_textview_1 = (TextView) findViewById(R.id.firebase_textview_1);
         message_textview_2 = (TextView) findViewById(R.id.firebase_textview_2);
         message_textview_3 = (TextView) findViewById(R.id.firebase_textview_3);
@@ -149,6 +164,80 @@ public class NewsUpdates extends AppCompatActivity {
             }
         });
 
+*/
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        FirebaseRecyclerAdapter<Events,EventViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Events, EventViewHolder>(
+                Events.class,
+                R.layout.event_row,
+                EventViewHolder.class,
+                mDatabase
+        ) {
+            @Override
+            protected void populateViewHolder(EventViewHolder viewHolder, Events model, int position) {
+                viewHolder.setName(model.getName());
+                viewHolder.setDesc(model.getDesc());
+                viewHolder.setBranch(model.getBranch());
+                viewHolder.setDate(model.getDate());
+                viewHolder.setTime(model.getTime());
+                viewHolder.setContact(model.getContact());
+                viewHolder.setMail(model.getMail());
+                viewHolder.setAddress(model.getAddress());
+            }
+        };
+        mEventList.setAdapter(firebaseRecyclerAdapter);
+
+    }
+
+    public static class EventViewHolder extends RecyclerView.ViewHolder {
+        View mView;
+
+        public EventViewHolder(View itemView) {
+            super(itemView);
+            itemView = mView;
+        }
+
+        public void setName(String name) {
+            TextView post_title = itemView.findViewById(R.id.tv_name);
+            post_title.setText(name);
+        }
+
+        public void setDesc(String desc) {
+            TextView post_desc = itemView.findViewById(R.id.tv_desc);
+            post_desc.setText(desc);
+        }
+
+        public void setBranch(String branch) {
+            TextView post_branch = itemView.findViewById(R.id.tv_branch);
+            post_branch.setText(branch);
+        }
+
+        public void setDate(String date) {
+            TextView post_date = itemView.findViewById(R.id.tv_date);
+            post_date.setText(date);
+        }
+        public void setTime(String time) {
+            TextView post_time = itemView.findViewById(R.id.tv_time);
+            post_time.setText(time);
+        }
+        public void setContact(String contact) {
+            TextView post_contact = itemView.findViewById(R.id.tv_contact);
+            post_contact.setText(contact);
+        }
+
+        public void setMail(String mail) {
+            TextView post_mail = itemView.findViewById(R.id.tv_mail);
+            post_mail.setText(mail);
+        }
+
+        public void setAddress(String address) {
+            TextView post_address = itemView.findViewById(R.id.tv_address);
+            post_address.setText(address);
+        }
 
     }
 

@@ -8,6 +8,50 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:1022957793720:android:63b2bdcca44fe0c8",
+        "android_client_info": {
+          "package_name": "com.prathameshmore.eventpost"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022957793720-dep0lt8u3orbhmdrda6prrccethuh8vc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prathameshmore.eventpost",
+            "certificate_hash": "1716251db9c304001f184a5c72891e4c2a5cb835"
+          }
+        },
+        {
+          "client_id": "1022957793720-0t4hvoth7st3d07os452lloql4eccon0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmV7W06_rwDAxLbEuldVfI53QqvycFNFg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022957793720-0t4hvoth7st3d07os452lloql4eccon0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:1022957793720:android:75af2fa5d78a124c",
         "android_client_info": {
           "package_name": "com.prathameshmore.zealmatholympiad"
@@ -15,11 +59,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "1022957793720-9t5vfahgptdrrras23ai9o04mvdn61js.apps.googleusercontent.com",
+          "client_id": "1022957793720-6ddct0b9fpqhv7mnggqfu95j6123qpk3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.prathameshmore.zealmatholympiad",
-            "certificate_hash": "5a0b390edf9aff3a953d0253e897939ccca240ed"
+            "certificate_hash": "de2e2fdbffee3c10c90baef0dc8ac459ec91e1e5"
           }
         },
         {
@@ -31,11 +75,19 @@
           }
         },
         {
-          "client_id": "1022957793720-6ddct0b9fpqhv7mnggqfu95j6123qpk3.apps.googleusercontent.com",
+          "client_id": "1022957793720-9t5vfahgptdrrras23ai9o04mvdn61js.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.prathameshmore.zealmatholympiad",
-            "certificate_hash": "de2e2fdbffee3c10c90baef0dc8ac459ec91e1e5"
+            "certificate_hash": "5a0b390edf9aff3a953d0253e897939ccca240ed"
+          }
+        },
+        {
+          "client_id": "1022957793720-mk0uj2p77ns4n2keib09vn2af9323ovf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prathameshmore.zealmatholympiad",
+            "certificate_hash": "1716251db9c304001f184a5c72891e4c2a5cb835"
           }
         },
         {
